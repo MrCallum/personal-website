@@ -1,5 +1,120 @@
+* {
+    margin: 0;
+}
 
 
-body {
+html {
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+header {
+    background-image: url("../Images/banner-image-Callum-in-river.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    background-size: cover;
+    width: 100%;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 1rem;
+    
+    
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    color: white;
+    
+    padding: 0 0.75rem;
+}
+
+#header_container {
+    padding: 12rem 0;
+}
+
+header h1 {
+    background-color: black;
+    color: white; 
+    opacity: 0.90;
+    
+
+    padding: 3rem 0;;
+
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+
+main {
+    margin: 4rem auto;
+    max-width: 900px;
+}
+
+
+section {
+    margin: 3rem 0;
+}
+
+article {
+    padding-left: 3rem;
+    border-left: 1px solid lightgray;
+}
+
+
+p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+li {
+    font-size: 1.2rem;
+}
+
+p span {
+    background: linear-gradient(135deg, rgba(173,255,118,1) 0%, rgba(135,235,255,1) 100%);
+    color: black;
+    border-radius: 0.25rem;
+    padding: 0rem 0.25rem;
+    font-family: monospace;
+}
+
+
+p span:hover {
+    
+    color: white;
+    letter-spacing: 0.05rem;
+}
+
+.card-holder {
+    display: flex;
+    
+}
+
+.card {
+    border: 1px solid black;
+    border-bottom-right-radius: 15px;
+    background-color: lightgray;
+
+    padding: 1rem;
+    max-width: 15rem;
+    text-align: center;
+
+    margin: 1rem;
+}
+
+.card-picture {
+    width: 100%;
+    background-color: white;
+    min-height: 4rem;
 }
