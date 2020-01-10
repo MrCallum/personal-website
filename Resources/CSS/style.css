@@ -8,6 +8,9 @@ html {
     
 }
 
+body {
+    
+}
 
 
 header {
@@ -18,6 +21,11 @@ header {
     width: 100%;
 }
 
+
+
+
+
+
 nav {
     background-color: black;
 }
@@ -25,17 +33,39 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 1rem;
-    
-    
     text-align: right;
 }
 
 nav li {
     display: inline-block;
     color: white;
-    
-    padding: 0 0.75rem;
+    padding: 10px 15px;
+    position: relative;
 }
+
+
+#current-page-anchor {
+    color: rgb(255, 179, 66);
+}
+
+nav a:after {    
+    content: "";
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
 
 #header_container {
     padding: 12rem 0;
@@ -61,6 +91,7 @@ header h1 {
 main {
     margin: 4rem auto;
     max-width: 900px;
+    
 }
 
 
@@ -97,6 +128,7 @@ p span:hover {
     
     color: white;
     letter-spacing: 0.05rem;
+    transition: 0.12s;
 }
 
 .card-holder {
@@ -112,67 +144,87 @@ p span:hover {
 
 .card {
     padding: 1rem;
-
-
+    margin: 1rem;
+    display: inline-block;
+    position: relative;
     width: 15rem;
     height: 15rem;
 
     text-align: center;
-    margin: 1rem;
-
-    display: inline-block;
-    position: relative;
-    
-
     text-transform: capitalize;
 }
 
+
+
 .card::after {
     content: "";
-    background: url("https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/health-benefits-of-apples-1296x728-feature.jpg?w=1155&h=1528");
+    
     background-position: center;
     background-size: cover;
-
+    background-image: url("https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/health-benefits-of-apples-1296x728-feature.jpg?w=1155&h=1528");
+    
+    border-radius: 15px;
+    
     opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;   
-
-    border-radius: 15px;
+    z-index: -1;  
+    
+    border-radius: 40px; 
+    
 }
 
-.card:hover{
-    bottom: 0.33rem;
+
+#card-UX::after {
+    background: url("https://careerfoundry.com/en/blog/uploads/what-does-a-ux-designer-do-header-image.jpg");
+    background-position: center;
+    background-size: cover;
+    
 }
 
-#card-metro-2033::after {
-    background: url("https://i.pinimg.com/originals/88/79/c4/8879c48a680249a6a7a1343603fbc27e.jpg");
+
+#card-film::after {
+    background: url("https://i.ytimg.com/vi/a2wO0S4RLCg/maxresdefault.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#card-reading::after {
+    background: url("https://longreadsblog.files.wordpress.com/2019/01/GettyImages-955854460.jpg?w=1200");
+    background-position: center;
+    background-size: cover;
+}
+
+#card-learning::after {
+    background: url("https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/01/08/12/ilya-pavlov-87438-unsplash.jpg?w968");
+    background-position: center;
+    background-size: cover;
+}
+
+#card-exercise::after {
+    background: url("https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center;
+    background-size: cover;
+}
+
+#card-pub-quiz::after {
+    background: url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
     background-position: center;
     background-size: cover;
 }
 
 
-#card-pacific-rim::after {
-    background: url("https://cdn.europosters.eu/image/750/posters/pacific-rim-go-big-or-go-extinct-i14559.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-#card-fundamental-force::after {
-    background: url("https://hdqwalls.com/wallpapers/astronaut-lost-in-space-rk.jpg");
-    background-position: center;
-    background-size: cover;
-}
 
 .card h3 {
-
+    font-size: 1.5rem;
 }
 
 .card p {
     font-style: italic;
+    font-size: 1.5rem;
 }
 
 
@@ -185,7 +237,7 @@ p span:hover {
 
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
     .card {
-        width: 80%;
+        width: 60%;
     }   
 }
 
