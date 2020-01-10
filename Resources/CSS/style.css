@@ -152,9 +152,12 @@ p span:hover {
 
     text-align: center;
     text-transform: capitalize;
+    font-size: 1.5rem;
 }
 
-
+.card p {
+    font-style: italic;
+}
 
 .card::after {
     content: "";
@@ -218,14 +221,7 @@ p span:hover {
 
 
 
-.card h3 {
-    font-size: 1.5rem;
-}
 
-.card p {
-    font-style: italic;
-    font-size: 1.5rem;
-}
 
 
 @media only screen and (max-width: 1000px){
@@ -238,7 +234,12 @@ p span:hover {
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
     .card {
         width: 60%;
+        font-size: 2.5rem;
     }   
+
+    .card p{
+        font-size: 2.5rem;
+    }
 }
 
 
