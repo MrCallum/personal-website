@@ -100,8 +100,12 @@ p span:hover {
 }
 
 .card-holder {
-    display: flex;
+    border: 1px solid black;
+    margin-top: 2rem;
     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -120,7 +124,7 @@ p span:hover {
 
     display: inline-block;
     position: relative;
-    flex-wrap: wrap;
+    
 
     text-transform: capitalize;
 }
