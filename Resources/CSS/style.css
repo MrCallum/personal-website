@@ -127,6 +127,7 @@ section {
 
 #post-meta {
     text-align: center;
+    margin: 8rem 0;
 }
 
 #post-meta img {
@@ -140,9 +141,6 @@ section {
     transition: ease-in 0.25s;
 }
 
-#post-meta a{
-    
-}
 
 article {
     padding-left: 3rem;
@@ -305,6 +303,10 @@ footer {
 
     section {
         margin: 6rem 0;
+    }
+
+    #post-meta img {
+        width: 2rem;
     }
 }
 
