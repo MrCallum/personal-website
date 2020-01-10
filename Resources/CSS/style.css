@@ -35,6 +35,7 @@ nav ul {
     padding: 1rem;
     text-align: right;
     letter-spacing: 0.1rem;
+    font-weight: bold;
 }
 
 nav li {
@@ -79,8 +80,9 @@ header h1 {
     color: white; 
     opacity: 0.90;
     
-    font-weight: normal;
+    font-weight: lighter;
     letter-spacing: 0.5rem;
+    font-family: 'Roboto Mono', monospace;
 
     padding: 3rem 0;
 
@@ -96,9 +98,27 @@ main {
     
 }
 
+.pull-quote-container {
+    margin: 2rem 0;
+    padding: 5rem 0 4.5rem 0;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+}
+
+.pull-quote {
+    font-size: 2rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.pull-quote-author{
+    font-size: 1.5rem; 
+    text-align: right;
+}
 
 section {
-    margin: 3rem 0;
+    margin: 4rem 0;
 }
 
 article {
