@@ -27,7 +27,7 @@ header {
 
 
 nav {
-    background-color: black;
+    
 }
 
 nav ul {
@@ -45,7 +45,8 @@ nav li {
 
 
 #current-page-anchor {
-    color: rgb(255, 179, 66);
+    border: 2px solid rgb(255, 179, 66);
+    border-radius: 25px;
 }
 
 nav a:after {    
