@@ -104,7 +104,7 @@ main {
 
 .pull-quote-container {
     margin: 2rem 0;
-    padding: 5rem 0 4.5rem 0;
+    padding: 5rem 2rem 4.5rem 2rem;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 
@@ -123,6 +123,25 @@ main {
 
 section {
     margin: 4rem 0;
+}
+
+#post-meta {
+    text-align: center;
+}
+
+#post-meta img {
+    width: 1rem;
+    padding: 1rem ;
+}
+
+#post-meta img:hover {
+    background-color: rgb(156, 156, 156);
+    border-radius: 50%;
+    transition: ease-in 0.25s;
+}
+
+#post-meta a{
+    
 }
 
 article {
