@@ -4,7 +4,7 @@
 
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -14,7 +14,6 @@ header {
     background-image: url("../Images/banner-image-Callum-in-river.JPG");
     background-repeat: no-repeat;
     background-position: center;
-  
     background-size: cover;
     width: 100%;
 }
@@ -42,11 +41,14 @@ nav li {
     padding: 12rem 0;
 }
 
+
 header h1 {
     background-color: black;
     color: white; 
     opacity: 0.90;
     
+    font-weight: normal;
+    letter-spacing: 0.5rem;
 
     padding: 3rem 0;;
 
@@ -75,6 +77,7 @@ article {
 p {
     margin: 1rem 0;
     font-size: 1.2rem;
+    
 }
 
 li {
@@ -101,20 +104,71 @@ p span:hover {
     
 }
 
+
+
+
 .card {
-    border: 1px solid black;
-    border-bottom-right-radius: 15px;
-    background-color: lightgray;
-
     padding: 1rem;
-    max-width: 15rem;
-    text-align: center;
 
+
+    min-width: 15rem;
+    max-width: 15rem;
+
+    height: 15rem;
+    text-align: center;
     margin: 1rem;
+
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+
+    text-transform: capitalize;
 }
 
-.card-picture {
-    width: 100%;
-    background-color: white;
-    min-height: 4rem;
+.card::after {
+    content: "";
+    background: url("https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/health-benefits-of-apples-1296x728-feature.jpg?w=1155&h=1528");
+    background-position: center;
+    background-size: cover;
+
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+
+    border-radius: 15px;
+}
+
+.card:hover{
+    bottom: 0.33rem;
+}
+
+#card-metro-2033::after {
+    background: url("https://i.pinimg.com/originals/88/79/c4/8879c48a680249a6a7a1343603fbc27e.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+#card-pacific-rim::after {
+    background: url("https://cdn.europosters.eu/image/750/posters/pacific-rim-go-big-or-go-extinct-i14559.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#card-fundamental-force::after {
+    background: url("https://hdqwalls.com/wallpapers/astronaut-lost-in-space-rk.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card h3 {
+
+}
+
+.card p{
+    font-style: italic;
 }
