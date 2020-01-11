@@ -375,6 +375,10 @@ footer {
     #dbs-logo {
         width: 10rem;
     }
+
+    #dbs-logo:hover {
+        width: 12rem;
+    }
 }
 
 
