@@ -19,10 +19,11 @@
     <script>
         function toggleMobileMenu(){
             const x = document.getElementById("mobile-menu");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
     </script>
@@ -56,13 +57,18 @@
     </header>
 
     <main>
+        <div id="dbs-logo-holder">
+            <img id="dbs-logo"src="Resources\Images\Sophie solo no colar.png">
+        </div>
         <section id="post-meta">
+            
             <p>By <a>Callum Morrison</a></p>
             <p>10-Jan-2020</p>
+            
             <div class="icon-container">
-                <img src="https://img.icons8.com/small/50/000000/filled-message.png">
-                <img src="https://img.icons8.com/small/16/000000/coffee.png">
-                <img src="https://img.icons8.com/small/16/000000/speech-bubble-with-dots.png">
+                <img class="icon" src="https://img.icons8.com/small/50/000000/filled-message.png">
+                <img class="icon" src="https://img.icons8.com/small/16/000000/coffee.png">
+                <img class="icon" src="https://img.icons8.com/small/16/000000/speech-bubble-with-dots.png">
 
             </div>
         </section>

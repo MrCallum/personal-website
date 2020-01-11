@@ -95,7 +95,7 @@ header h1 {
 }
 
 #mobile-menu {
-    display: none;
+    display : none;
     height: 100%;
     width: 100%;
 
@@ -103,6 +103,7 @@ header h1 {
     background-color: black;
     z-index: 1;
     border: 1px solid red;
+
 }
 
 #mobile-menu-button {
@@ -161,12 +162,35 @@ section {
     margin: 8rem 0;
 }
 
-#post-meta img {
+
+
+
+
+#dbs-logo-holder {
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+#dbs-logo {
+    width: 4rem;
+    border-radius: 50%;
+    margin: 1rem;
+    z-index: 200;
+}
+
+#dbs-logo:hover {
+    width: 4.4rem;
+    transition: ease-in 0.15s;
+}
+
+
+.icon {
     width: 1rem;
     padding: 1rem ;
 }
 
-#post-meta img:hover {
+.icon:hover {
     background-color: rgb(156, 156, 156);
     border-radius: 50%;
     transition: ease-in 0.25s;
@@ -336,7 +360,7 @@ footer {
         margin: 6rem 0;
     }
 
-    #post-meta img {
+    .icon {
         width: 2rem;
     }
 
@@ -346,6 +370,10 @@ footer {
 
     .desktop-nav-button {
         display: none;
+    }
+
+    #dbs-logo {
+        width: 10rem;
     }
 }
 
