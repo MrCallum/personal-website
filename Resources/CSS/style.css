@@ -75,7 +75,7 @@ nav a:hover:after {
 
 
 #header_container {
-    padding: 15rem 0 20rem 0;
+    padding: 10rem 0 16rem 0;
 }
 
 
@@ -88,9 +88,9 @@ header h1 {
     letter-spacing: 0.5rem;
     font-family: 'Roboto Mono', monospace;
 
-    padding: 3rem 0;
+    padding: 2rem 0;
 
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -169,7 +169,7 @@ section {
 
 #post-meta {
     text-align: center;
-    margin: 8rem 0;
+    margin: 6rem 0 8rem 0;
 }
 
 
@@ -177,7 +177,7 @@ section {
 
 
 #dbs-logo-holder {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     text-align: center;
 }
