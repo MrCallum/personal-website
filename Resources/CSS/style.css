@@ -63,7 +63,7 @@ nav a:after {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: rgb(255, 179, 66);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -102,7 +102,7 @@ header h1 {
     position: fixed;
     background-color: black;
     z-index: 1;
-    border: 1px solid red;
+    
 
 }
 
@@ -146,6 +146,16 @@ main {
     font-size: 2rem;
     font-style: italic;
     text-transform: uppercase;
+}
+
+.pull-quote:before {
+    content: open-quote;
+    margin: 0 1rem;
+}
+
+.pull-quote:after {
+    content: close-quote;
+    margin: 0 1rem;
 }
 
 .pull-quote-author{
