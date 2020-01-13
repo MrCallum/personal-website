@@ -35,9 +35,8 @@
             <p onclick="toggleMobileMenu()">close</p>
             <ul>
                 <li id="current-page-anchor-mobile"><a>About</a></li>
-                <li><a>CV</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Blog</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </div>
 
@@ -45,9 +44,8 @@
             <ul>
                 <li id="mobile-menu-button" onclick="toggleMobileMenu()">Menu</li>
                 <li id="current-page-anchor" class="desktop-nav-button">About</li>
-                <li class="desktop-nav-button"><a>CV</a></li>
-                <li class="desktop-nav-button"><a>Projects</a></li>
-                <li class="desktop-nav-button"><a>Blog</a></li>
+                <li class="desktop-nav-button"><a href="cv.html">CV</a></li>
+                <li class="desktop-nav-button"><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
  
@@ -64,32 +62,37 @@
             
             <p>By <a>Callum Morrison</a></p>
             <p>10-Jan-2020</p>
-            
+            <!--
             <div class="icon-container">
                 <img class="icon" src="https://img.icons8.com/small/50/000000/filled-message.png">
                 <img class="icon" src="https://img.icons8.com/small/16/000000/coffee.png">
                 <img class="icon" src="https://img.icons8.com/small/16/000000/speech-bubble-with-dots.png">
 
             </div>
+            -->
         </section>
-        <div class="pull-quote-container">
-            <p class="pull-quote">I don't think I know anyone who likes hummus quite as much as you do</p>
-            <p class="pull-quote-author">- Friend of Callum, 2019</p>
-        </div>
+        
         <section id="about">
             <h2><a style="color: mediumseagreen">#</a> About</h2>
             <article>
-                <p>Hello, i'm Callum. I'm an Edinburgh based web developer / product owner.</p>
+                <p>Hello, I'm Callum. I'm an Edinburgh based web developer / product owner.</p>
                 <p>This website is pretty new (launched Jan 2020). I'll be adding my side projects in the coming months. Please check back in later, i'm sure you're dying to see them.</p>
-                <p>If you have any feedback or advice, or just want to get in touch, please email me <span>here</span>.</p>
+                <p>If you have any feedback or advice, or just want to get in touch, please email me <a href="#contact">here</a>.</p>
                 <p>Thanks very much!</p>
+                <p>(P.S.Please take the quotes with a pinch of salt, I just love their formatting.)</p>
             </article>
             
         </section>
+
+        <div class="pull-quote-container">
+            <p class="pull-quote">I’m still learning</p>
+            <p class="pull-quote-author">- Michelangelo</p>
+        </div>
+
         <section id="history">
             <h2><a style="color: rgb(215, 238, 171)">#</a> History</h2>
             <article>
-                <p>If you want to see a full CV, go <span>here</span>. Here's a brief version:</p>
+                <p>If you want to see a full CV, go <a href="cv.html">here</a>. Here's a brief version:</p>
                 <ul>
                     <li>Born in Aberdeen, raised in the Highlands</li>
                     <li>Studied at RGU</li>
@@ -100,10 +103,12 @@
             </article>
             
         </section>
+
         <div class="pull-quote-container">
-            <p class="pull-quote">I quite like your silver Casio, where did you get it from?</p>
-            <p class="pull-quote-author">- Another friend of Callum, 2019</p>
+            <p class="pull-quote">If you don’t find the time, if you don’t do the work, you don’t get the results</p>
+            <p class="pull-quote-author">- Schwarzenegger</p>
         </div>
+        
         <section id="Hobbies">
             <h2><a style="color: lightblue">#</a> Hobbies</h2>
             <article>
@@ -159,14 +164,21 @@
         </section>
 
         <div class="pull-quote-container">
-            <p class="pull-quote">Just because it's in a larger font doesn't make it true</p>
-            <p class="pull-quote-author">- Ghandi, 2015</p>
+            <p class="pull-quote">The ability to observe without evaluating is the highest form of intelligence</p>
+            <p class="pull-quote-author">- Krishnamurti</p>
         </div>
+
+        <section id="contact">
+            <h2><a style="color: rgb(10, 145, 190)">#</a> Contact Me</h2>
+            <article>
+                <p>Feel free to send me an email at mrcallummorrison@gmail.com</p>
+            </article>
+        </section>
+        
     </main>
     <footer>
         <ul>
             <li>Callum Morrison</li>
-            <li>mrcallummorrison@gmail.com</li>
             <li>&copy; 2020, all rights reserved</li>
         </ul>
     </footer>

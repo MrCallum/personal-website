@@ -21,13 +21,23 @@ header {
     width: 100%;
 }
 
+#header-cv {
+    background-image: url("../Images/running.JPG");
+}
 
-
+#header-projects {
+    background-image: url("../Images/rocks.JPG");
+}
 
 
 
 nav {
     
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
 }
 
 nav ul, footer ul {
@@ -54,6 +64,8 @@ footer li {
     border: 2px solid rgb(255, 179, 66);
     border-radius: 25px;
 }
+
+
 
 nav a:after {    
     content: "";
@@ -102,8 +114,6 @@ header h1 {
     position: fixed;
     background-color: black;
     z-index: 1;
-    
-
 }
 
 #mobile-menu-button {
@@ -223,16 +233,17 @@ li {
     font-size: 1.2rem;
 }
 
-p span {
+article a {
     background: linear-gradient(135deg, rgba(173,255,118,1) 0%, rgba(135,235,255,1) 100%);
     color: black;
     border-radius: 0.25rem;
     padding: 0rem 0.25rem;
     font-family: monospace;
+    text-decoration: none;
 }
 
 
-p span:hover {
+article a:hover {
     
     color: white;
     letter-spacing: 0.05rem;

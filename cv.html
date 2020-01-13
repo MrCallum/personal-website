@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <title>Callum | CV</title>
+    <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet"> 
+    <link href="./Resources/CSS/cv-style.css" type="text/css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <script>
+        function toggleMobileMenu(){
+            const x = document.getElementById("mobile-menu");
+            
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function expandCollapseJobCard(nameToAlter){
+            const x = document.getElementById(nameToAlter);
+            
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <header id="header-cv">
+        <div id="mobile-menu">
+            <p onclick="toggleMobileMenu()">close</p>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li id="current-page-anchor-mobile"><a>CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul>
+                <li id="mobile-menu-button" onclick="toggleMobileMenu()">Menu</li>
+                <li class="desktop-nav-button"><a  href="index.html">About</a></li>
+                <li id="current-page-anchor" class="desktop-nav-button">CV</li>
+                <li class="desktop-nav-button"><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+ 
+        <div id="header_container">
+            <h1>CV</h1>
+        </div>
+    </header>
+    <main>
+        <div id="dbs-logo-holder">
+            <img id="dbs-logo"src="Resources\Images\Sophie solo no colar.png">
+        </div>
+        <section id="post-meta">
+            
+            <p>By <a>Callum Morrison</a></p>
+            <p>Last updated: 10-Jan-2020</p>
+            <!--
+            <div class="icon-container">
+                <img class="icon" src="https://img.icons8.com/small/50/000000/filled-message.png">
+                <img class="icon" src="https://img.icons8.com/small/16/000000/coffee.png">
+                <img class="icon" src="https://img.icons8.com/small/16/000000/speech-bubble-with-dots.png">
+
+            </div>
+            -->
+        </section>  
+        <section>
+            <div class="cv-card-holder">
+                <div class="job-card" id="informa-product-owner">
+                    <div class="job-card-display-section">
+                        <p>Associate Product Owner</p>
+                        <p>Informa Systems</p>
+                        <p>June 19 - Present</p>
+                    </div>
+                    <div class="job-card-text-section">
+                        <button class="expand-card-button" onclick="expandCollapseJobCard('informa-product-owner-text')">+</button>
+                        <div class="job-text" id="informa-product-owner-text">
+                            <div>
+                                <h3>Overview</h3>
+                                <p>This role consisted of three broad management areas. 1 - Clients: Fielding and resolving queries, researching pain points, validating potential features, communicating update plans, and maintaining relationships. 2 - Developers: Assigning tasks (Scrum workflow), reviewing work, facilitating code-reviews, and developing their skills. 3 - Product backlog: Performing the role of product owner for a software team.</p>
+                            </div>
+                            <div>
+                                <h3>Other</h3>
+                                <p>I was the lead for implementing two new clients which involved training, system tuning, workflow planning, implementing new custom features, and relationship management. Another noteworthy project was updating the 2 year old codebase for a client with over 40k active users; this involved extensive planning, testing, and communication.</p>
+                            </div>
+                            <div>
+                                <h3>Tech</h3>
+                                <p>InformaOne is a LMS web-app built using ASP.NET. I deployed and managed sites through IIS; fixed bugs and updated schemas via MS SQL; managed developers, reviewed and occasionally committed code via Azure DevOps. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card" id="informa-bus-dev">
+                    <div class="job-card-display-section">
+                        <p>Business Development Manager</p>
+                        <p>Informa Systems</p>
+                        <p>July 18 - May 19</p>
+                    </div>
+                    <div class="job-card-text-section">
+                        <button class="expand-card-button" onclick="expandCollapseJobCard('informa-bus-dev-text')">+</button>
+                        <div class="job-text" id="informa-bus-dev-text">
+                            <div>
+                                <h3>Overview</h3>
+                                <p>Project work, including building client-facing learning materials; advertising campaigns; creation of interactive, HTML-based software demos; product QA, bug reporting and test-script writing; competition analysis with potential pivots; API reviewing.</p>
+                            </div>
+                            <div>
+                                <h3>Quiz App</h3>
+                                <p>Biggest project was the creation of a multiplayer quiz app where I was the sole developer. Written in C#, made in Unity, available on iOS / Android. Realtime database management and user authentication through Google Firebase. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card" id="self-employed-cubefall">
+                    <div class="job-card-display-section">
+                        <p>Mobile Games Developer</p>
+                        <p>Self Employed</p>
+                        <p>Feb 18 - June 19</p>
+                    </div>
+                    <div class="job-card-text-section">
+                        <button class="expand-card-button" onclick="expandCollapseJobCard('self-employed-cubefall-text')">+</button>
+                        <div class="job-text" id="self-employed-cubefall-text">
+                            <div>
+                                <h3>Overview</h3>
+                                <p>Sole developer / creator of “Cubefall”. Written in C#, created using Unity, available on iOS / Android. Unity and C# skills self-taught. 100% self funded and self employed, therefore hitting deadlines, fast learning and adapting was key.</p>
+                            </div>
+                            <div>
+                                <h3>Job Role</h3>
+                                <p>Designed, coded and implemented gameplay mechanics and UI from scratch. Created in-game assets and graphics, and store listing materials. Conducted a beta and used post-launch, real-time analytics for feedback and updates. Conducted extensive bug-squashing using Unity’s tools and platform reporting. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>

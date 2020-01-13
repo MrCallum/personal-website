@@ -1,0 +1,85 @@
+.job-card {
+    background-color: rgb(224, 224, 224);
+    
+    border-radius: 15px;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+
+    display: inline-block;
+    position: relative;
+
+    width: 100%;
+
+    margin: 2rem 0;
+}
+
+.job-card-display-section {
+    padding: 1rem;
+    color: white;
+}
+
+
+
+#informa-product-owner .job-card-display-section {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Images/informa-product-owner.jfif");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#informa-bus-dev .job-card-display-section {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Images/informa-bus-dev.jfif");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#self-employed-cubefall .job-card-display-section {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Images/cubefall-background.png");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.job-card button {
+    border: none;
+    background-color: inherit;
+    text-align: center;
+    font-size: 1.5rem;
+
+    transition: 0.4s;
+}
+
+.job-card button:hover {
+    border-radius: 50%;
+
+    background-color: rgb(209, 209, 209);
+    
+}
+
+
+
+.job-card-text-section {
+    padding: 1rem;
+    background-color: white ;
+
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    transition: 0.4s;
+}
+
+.job-text {
+    display: none;
+
+    padding: 1rem 0;
+
+    overflow: hidden;
+}
+
+.job-text p {
+    color: rgb(102, 102, 102);
+}

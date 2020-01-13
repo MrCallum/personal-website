@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Callum | Projects</title>
+    <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <script>
+        function toggleMobileMenu(){
+            const x = document.getElementById("mobile-menu");
+            
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header id="header-projects">
+        <div id="mobile-menu">
+            <p onclick="toggleMobileMenu()">close</p>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li id="current-page-anchor-mobile"><a>Projects</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul>
+                <li id="mobile-menu-button" onclick="toggleMobileMenu()">Menu</li>
+                <li class="desktop-nav-button"><a href="index.html">About</a></li>
+                <li class="desktop-nav-button" ><a href="cv.html">CV</a></li>
+                <li class="desktop-nav-button" id="current-page-anchor" >Projects</li>
+            </ul>
+        </nav>
+ 
+        <div id="header_container">
+            <h1>Projects</h1>
+        </div>
+    </header>
+</body>
