@@ -5,6 +5,7 @@
     <link href="./Resources/CSS/cv-style.css" type="text/css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    
 
     <script>
         function toggleMobileMenu(){
@@ -69,7 +70,16 @@
 
             </div>
             -->
-        </section>  
+        </section>
+        
+        <section id="about">
+            
+            <h2><a style="color: rgb(215, 238, 171)">#</a> CV</h2>
+            <article>
+                <p>This page outlines my job history to date. To request a full CV, pease contact me <a href="#contact">here</a>.</p>
+            </article>
+            
+        </section>
         <section>
             <div class="cv-card-holder">
                 <div class="job-card" id="informa-product-owner">
@@ -79,7 +89,9 @@
                         <p>June 19 - Present</p>
                     </div>
                     <div class="job-card-text-section">
-                        <button class="expand-card-button" onclick="expandCollapseJobCard('informa-product-owner-text')">+</button>
+                        <div class="button-holder" onclick="expandCollapseJobCard('informa-product-owner-text')">
+                            <button class="expand-card-button" >+</button>
+                        </div>
                         <div class="job-text" id="informa-product-owner-text">
                             <div>
                                 <h3>Overview</h3>
@@ -104,7 +116,9 @@
                         <p>July 18 - May 19</p>
                     </div>
                     <div class="job-card-text-section">
-                        <button class="expand-card-button" onclick="expandCollapseJobCard('informa-bus-dev-text')">+</button>
+                        <div class="button-holder" onclick="expandCollapseJobCard('informa-bus-dev-text')">
+                            <button class="expand-card-button" >+</button>
+                        </div>
                         <div class="job-text" id="informa-bus-dev-text">
                             <div>
                                 <h3>Overview</h3>
@@ -125,7 +139,9 @@
                         <p>Feb 18 - June 19</p>
                     </div>
                     <div class="job-card-text-section">
-                        <button class="expand-card-button" onclick="expandCollapseJobCard('self-employed-cubefall-text')">+</button>
+                        <div class="button-holder"  onclick="expandCollapseJobCard('self-employed-cubefall-text')">
+                            <button class="expand-card-button">+</button>
+                        </div>
                         <div class="job-text" id="self-employed-cubefall-text">
                             <div>
                                 <h3>Overview</h3>
@@ -146,19 +162,21 @@
                         <p>Nov/16 – Feb/18, Nov/18, Jan-Feb/19</p>
                     </div>
                     <div class="job-card-text-section">
-                        <button class="expand-card-button" onclick="expandCollapseJobCard('first-state-accounts-text')">+</button>
+                        <div class="button-holder" onclick="expandCollapseJobCard('first-state-accounts-text')">
+                            <button class="expand-card-button" >+</button>
+                        </div>
                         <div class="job-text" id="first-state-accounts-text">
                             <div>
                                 <h3>Job Role</h3>
-                                <p>Invoice and payment processing, credit card processing, monthly reconciliations, daily banking reconciliation, weekly cash flow management, currency management and intercompany transfers.</p>
+                                <p>Invoice and payment processing: Invoices high volume (~75/week), high value (up to £3m), and complex (multiple beneficiaries, accounts, departments, products and project codes, business units etc.).  Other: Credit card processing, monthly reconciliations, daily banking reconciliation, weekly cash flow management, currency management and intercompany transfers.</p>
                             </div>
                             <div>
                                 <h3>System Changeover</h3>
-                                <p>Implementation of a completely new, cloud-based program (Adest) to replace approvals / sign offs via email and provide other benefits. Completed extensive system testing, designed and performed training.</p>
+                                <p>Implementation of a completely new, cloud-based program (Adest) to replace approvals / sign offs via email and provide other benefits. Completed extensive system testing to identify shortcomings, bugs and “hacks” for 4 weeks before launch. Designed and performed direct user training for 50+ core users.</p>
                             </div>
                             <div>
                                 <h3>Commissions Administrator</h3>
-                                <p>Most recent contract was to create a one-off, Brexit related, commission calculating template. </p>
+                                <p>Most recent contract was to create a one-off, Brexit related, commission calculating template. This involved numerous exceptions due to complex client agreements, with a great deal of input from multiple teams.</p>
                             </div>
                         </div>
                     </div>
@@ -171,7 +189,9 @@
                         <p>June 2010 - October 2016</p>
                     </div>
                     <div class="job-card-text-section">
-                        <button class="expand-card-button" onclick="expandCollapseJobCard('the-rest-text')">+</button>
+                        <div class="button-holder" onclick="expandCollapseJobCard('the-rest-text')">
+                            <button class="expand-card-button" >+</button>
+                        </div>
                         <div class="job-text" id="the-rest-text">
                             <div>
                                 <h3>Accounts Assistant</h3>
@@ -203,6 +223,9 @@
                 </div>
             </div>
         </section>
+    
+        
+        
 
         <section id="contact">
             <h2><a style="color: rgb(10, 145, 190)">#</a> Contact Me</h2>
