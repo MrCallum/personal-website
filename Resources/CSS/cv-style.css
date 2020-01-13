@@ -44,12 +44,26 @@
     border-top-left-radius: 15px;
 }
 
+#first-state-accounts .job-card-display-section {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Images/fsi-accounts.jfif");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#the-rest .job-card-display-section {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Images/the-rest.jfif");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
 .job-card button {
     border: none;
     background-color: inherit;
-    text-align: center;
     font-size: 1.5rem;
-
     transition: 0.4s;
 }
 
@@ -82,4 +96,17 @@
 
 .job-text p {
     color: rgb(102, 102, 102);
+}
+
+.job-text div {
+    padding: 0.5rem 0;
+}
+
+.job-text h4 {
+    color: rgb(102, 102, 102);
+}
+
+.job-text h4:before {
+    content: "";
+    padding-right: 1rem;
 }
