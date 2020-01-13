@@ -13,13 +13,22 @@ body {
     
 }
 
-
 header {
-    background-image: url("../Images/banner-image-Callum-in-river.JPG");
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+
+.header-image {
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
+}
+
+#header-about {
+    background-image: url("../Images/banner-image-Callum-in-river.JPG");
 }
 
 #header-cv {
@@ -404,6 +413,10 @@ footer {
 
     #dbs-logo:hover {
         width: 12rem;
+    }
+
+    #header-projects {
+        background-position-x: 75%;
     }
 }
 
