@@ -10,24 +10,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./Resources/Images/Favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Images/Favicons/favicon-16x16.png">
     
-    <script>
-        function toggleMobileMenu(){
-            const x = document.getElementById("mobile-menu");
-            
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+    <script src="Resources/JavaScript/MobileMenu.js"></script>
+
 
 </head>
 <body>
     <header>
         <div id="header-about" class="header-image">
             <div id="mobile-menu">
-                <p onclick="toggleMobileMenu()">close</p>
+                <p onclick="closeMobileMenu()">close</p>
                 <ul>
                     <li id="current-page-anchor-mobile"><a>About</a></li>
                     <li><a href="cv.html">CV</a></li>
@@ -37,7 +28,7 @@
 
             <nav>
                 <ul>
-                    <li id="mobile-menu-button" onclick="toggleMobileMenu()">Menu</li>
+                    <li id="mobile-menu-button" onclick="openMobileMenu()">Menu</li>
                     <li id="current-page-anchor" class="desktop-nav-button">About</li>
                     <li class="desktop-nav-button"><a href="cv.html">CV</a></li>
                     <li class="desktop-nav-button"><a href="projects.html">Projects</a></li>
