@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <title>Projects | Informa Quiz App</title>
+    
+    <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./Resources/Images/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Resources/Images/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Images/Favicons/favicon-16x16.png">
+
+    <script src="Resources/JavaScript/MobileMenu.js"></script>
+
+</head>
+<body>
+    <header >
+        <div id="header-informa-quiz" class="header-image">
+            <div id="mobile-menu">
+                <p onclick="closeMobileMenu()">close</p>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li id="current-page-anchor-mobile"><a>Projects</a></li>
+                </ul>
+            </div>
+
+            <nav>
+                <ul>
+                    <li id="mobile-menu-button" onclick="openMobileMenu()">Menu</li>
+                    <li class="desktop-nav-button"><a href="index.html">About</a></li>
+                    <li class="desktop-nav-button" ><a href="cv.html">CV</a></li>
+                    <li class="desktop-nav-button" id="current-page-anchor" >Projects</li>
+                </ul>
+            </nav>
+    
+            <div id="header_container">
+                <h1>Informa Quiz App</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="dbs-logo-holder">
+            <img id="dbs-logo"src="Resources\Images\Sophie solo no colar.png">
+        </div>
+        <section id="post-meta">
+            <p>By <a>Callum Morrison</a></p>
+            <p>11-Feb-2020</p>
+        </section>
+                
+        <section id="about">
+            <h2><a style="color: mediumseagreen">#</a> Informa Quiz App - About</h2>
+            <article>
+                
+                <h3>Background & Brief</h3>
+                <p>In the winter of 2018 / 19 I was tasked by Informa Systems to build a quiz app. I was the sole developer and the project was from scratch.</p> 
+                <p>Informa System's main software is a feature-heavy LMS targeted at U.S. emergency services, mostly Police. As such, it was decided that a good way to market the main software was to create a completely free multiplayer quiz app. It was envisioned that such an app would be used as a training tool within police academies and the like. The brief was as follows:</p>
+                <ul>
+                    <li>Multiplayer quiz with single quiz master - multiple quiz player relationship.</li>
+                    <li>Target platforms (to work together): Android, iOS and Chromebook.</li>
+                    <li>Ability to select pre-made quizzes and to create quizzes.</li>
+                    <li>Bonus: Single player mode.</li>
+                </ul>                
+                
+                <h3>Completion</h3>
+                <p>The prototype was created in full and worked very well, please see the videos below. The app was briefly on the Play Store so Informa Systems customers could test. The brief was completed in full.</p> 
+                <p>The project was unfortunately pulled before going into production due to changing business focus.</p>
+            
+        </section>
+        <section>
+            <h2><a style="color: mediumseagreen">#</a> Gameplay</h2>
+            <article>
+                
+                <h3>General</h3>
+                <p>This app was a text-based quiz game. Simply read the question and select one of the multiple choice answers:</p>
+                <img 
+                    class="vertical-screencap-media" 
+                    src="Resources/Images/quiz-app-screenshot.png" 
+                    style="margin-bottom: 1rem;">
+                
+                <h3>Multiplayer</h3>
+                <p> The main focus of the game was the asymetric multiplayer. One player is the "Question Master" - they choose the questions, settings, and create a session. The QM then starts the game and dictates the flow: this video shows the options available to the QM:</p>
+                <video width="324" height="546" controls muted>
+                    <source src="Resources/Videos/quiz-app-qm-view.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+                <p> All of the other participants are "players". Players join the session via a code the QM would verbally share. The following video shows how a player can join a session using a temporary account and then answer questions (note that only 2 questions are shown and then the QM prematurely ends the game):</p>
+                <video width="270" height="588" controls muted>
+                    <source src="Resources/Videos/quiz-app-player-view.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+                
+                
+                <h3>Single Player</h3>
+                <p>Another mode included was Single Player. The player would choose a question-set and aim to finish this as fast as possible. If an incorrect answer was selected it would add a time penality and the player would have to choose again until they selected the correct answer. Their time was saved to a leaderbaord and the player could share a picture of their score via native options.</p>
+                
+                <h3>Question Creator</h3>
+                <p>This featured allowed for the user to create a question-set and save it locally. If time had allowed, this feature would have been extended to allow question-sets to be shared and eventually some sort of platform.</p>
+                <div class="vertical-image-container">
+                    <img class="vertical-screencap-media" src="Resources/Images/quiz-app-question-maker-1.png"/>
+                    <img class="vertical-screencap-media" src="Resources/Images/quiz-app-question-maker-2.png"/>
+                    <img class="vertical-screencap-media" src="Resources/Images/quiz-app-question-maker-3.png"/>
+                    <img class="vertical-screencap-media" src="Resources/Images/quiz-app-question-maker-4.png"/>
+                </div>
+            </article>
+        </section>
+
+        <section id="technologies">
+            <h2><a style="color: mediumseagreen">#</a> Technologies</h2>
+            <article>
+                <div class="project-logo" style="margin-top: 2rem;">
+                    <img src="https://i.redd.it/estpv0c6iw841.jpg"/>
+                    <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png"/>
+                    <img src="https://www.brandeps.com/logo-download/C/C-Sharp-logo-vector-01.svg"/>
+                    <img src="https://image.flaticon.com/icons/png/512/174/174836.png"/>
+                    <img src="https://cdn0.iconfinder.com/data/icons/jfk/512/chrome-512.png"/>
+                    <img src="https://cnet3.cbsistatic.com/img/qt1Ts53nLxKXj_u8hLTeQgkhoIo=/370x0/2011/10/05/74df5391-fdc1-11e2-8c7c-d4ae52e62bcc/apple-logo-2.jpg"/>
+                </div>
+                <p>The app was written in C#, built using <a href="https://unity.com/" target="blank">Unity</a> and the Unity <a href="https://firebase.google.com/" target="blank">Google Firebase</a> integration. </p>
+                <p><u>Unity</u>: This was chosen as the front-end / application framework for prototyping. Although Unity is a heavyweight choice, at the time it was the framework I was the most knowledgeable with as I had just developed a 3D game with it: Cubefall. It was our intention that the project would be recreated using something more suitable post product validation.</p>
+                <p><u>Firebase</u>: This was used for the back-end, specifically authentication and database. Firebase has an extremely responsive real-time database, which proved perfect for our multiplayer quiz app where players receiving the question at the same time is key. A further bonus was that this setup meant our quiz sessions had a practically infinite upper player limit as literally thousands can interact with this relational database concurrently.</p>
+            </article>
+            
+        </section>
+        <section id="lessons">
+            <h2><a style="color: mediumseagreen">#</a> Lessons</h2>
+            <article>
+                <p>Here is a collection of thoughts and lessons learned, written with over a year to reflect. </p>
+                <!--
+                <h3>The unfamiliar</h3>
+                <p>Going through the app now, I am still impressed how well the real-time database works. [tell the story</p>
+                <h3>Prototypes</h3>
+                <p>Prototypes are prototypes, not early versions of your product. Inconsistent UI.</p>
+                -->
+                <h3>The road ahead</h3>
+                <p>Even though the brief was completed in full and all deadlines were met, the app was still cancelled. I think there is a lesson to be learned from the story of how the app started and how it ended.</p>
+                <p>The app started as a marketing tool for the businesses’ LMS software <em>InformaOne</em>. Our target user was an instructor at a police or firefighter academy. They would use our software as a fun tool to liven up dry classes, and in return this would generate interest in our main software.</p>
+                <p>During development, scope crept. We used the app “Kahoot” as a reference as it is a best-of-class example for multiplayer quiz apps. Kahoot is a fantastically successful company, valued north of $300m. This starts the inevitable thoughts: “if our base app does the same thing, why not try take a slice of the same pie?”. We slowly transitioned from a marketing tool into a Kahoot competitor.</p>
+                <p>The need for a question-set creator was there from the start, but now it we would need some kind of sharing platform, which would require some kind of curation system, which requires some kind of rating system. <em>Some kind</em> is the indicator of scope creep.</p>
+                <p>Alongside these new features, the app, which was still technically a prototype, was far off the polished UI and UX of Kahoot. This was ultimately why it was cancelled as the business decided it would be too costly to compete with the much larger, much better funded Kahoot studio.</p>
+                <p>The app was cancelled for a reason that shouldn’t have applied to it. I can’t criticise management in this decision as I was equally complicit: the thought of being in at the ground floor of a potentially multi-million dollar app was just too inviting. Management and I bounced ideas off each other and said yes without properly thinking through what yes really meant. It’s easy to say “yes” today, but hard to implement “yes” tomorrow, and even hard to make a project successful when twenty “yesses” has cornered your product.</p>
+                <p>I have thought of many questions now that would have been useful to ask myself back then, but for the sake of memorability I think of just this one: What is the intention of this new pivot in relation to the original concept? Just answering this one question helps you retrace how you got from 0 to where you are now, which grounds you regarding your next potential step.</p>
+                
+            </article>
+        </section>
+        
+
+        
+        
+    </main>
+    <footer>
+        <ul>
+            <li>Callum Morrison</li>
+            <li>&copy; 2020, all rights reserved</li>
+        </ul>
+    </footer>
+</body>

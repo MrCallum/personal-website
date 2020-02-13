@@ -39,7 +39,9 @@ header {
     background-image: url("../Images/rocks.JPG");
 }
 
-
+#header-informa-quiz {
+    background-image: url("../Images/quiz-page-banner.jfif");
+}
 
 nav {
     
@@ -114,6 +116,10 @@ header h1 {
 
     font-size: 2.5rem;
     text-align: center;
+}
+
+h3 {
+    margin-top: 2rem;
 }
 
 #mobile-menu {
@@ -253,6 +259,7 @@ p {
     
 }
 
+
 li {
     font-size: 1.2rem;
 }
@@ -368,6 +375,25 @@ footer {
     padding: 1rem 4rem;
 }
 
+.project-logo {
+    display: flex;
+}
+
+.project-logo img{
+    height: 3rem;
+}
+
+.vertical-image-container {
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+.vertical-screencap-media{
+    height: 30rem;
+    margin-right: 2rem;
+    border: 1px solid gray;
+}
 
 
 @media only screen and (max-width: 1000px){
@@ -431,6 +457,14 @@ footer {
 
     #header-projects {
         background-position-x: 75%;
+    }
+
+    .vertical-image-container img{
+        height: 40rem;
+    }
+
+    .vertical-screencap-media{
+        height: 40rem;
     }
 }
 
