@@ -82,7 +82,7 @@
         height: auto;
     }
 
-    button p, .panel p{
+    button p, .panel p, .panel li{
         font-size: 3rem;
     }
 
