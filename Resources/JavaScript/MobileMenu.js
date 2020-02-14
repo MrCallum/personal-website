@@ -5,3 +5,6 @@ function openMobileMenu(){
 function closeMobileMenu(){
     document.getElementById("mobile-menu").style.width = "0%";
 }
+
+
+

@@ -3,6 +3,7 @@
     <title>Projects | Informa Quiz App</title>
     
     <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet"> 
+    <link href="./Resources/CSS/projects-style.css" type="text/css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
@@ -12,6 +13,8 @@
 
     <script src="Resources/JavaScript/MobileMenu.js"></script>
 
+    
+        
 </head>
 <body>
     <header >
@@ -67,26 +70,27 @@
                 <p>The project was unfortunately pulled before going into production due to changing business focus.</p>
             
         </section>
-        <section>
+
+        <section id="gameplay">
             <h2><a style="color: mediumseagreen">#</a> Gameplay</h2>
             <article>
                 
                 <h3>General</h3>
                 <p>This app was a text-based quiz game. Simply read the question and select one of the multiple choice answers:</p>
                 <img 
-                    class="vertical-screencap-media" 
+                    class="vertical-screencap-image" 
                     src="Resources/Images/quiz-app-screenshot.png" 
                     style="margin-bottom: 1rem;">
                 
                 <h3>Multiplayer</h3>
                 <p> The main focus of the game was the asymetric multiplayer. One player is the "Question Master" - they choose the questions, settings, and create a session. The QM then starts the game and dictates the flow: this video shows the options available to the QM:</p>
-                <video width="324" height="546" controls muted>
+                <video class="vertical-screencap-video" controls muted>
                     <source src="Resources/Videos/quiz-app-qm-view.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
                   Your browser does not support the video tag.
                 </video>
                 <p> All of the other participants are "players". Players join the session via a code the QM would verbally share. The following video shows how a player can join a session using a temporary account and then answer questions (note that only 2 questions are shown and then the QM prematurely ends the game):</p>
-                <video width="270" height="588" controls muted>
+                <video class="vertical-screencap-video" controls muted>
                     <source src="Resources/Videos/quiz-app-player-view.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
                   Your browser does not support the video tag.
@@ -99,10 +103,10 @@
                 <h3>Question Creator</h3>
                 <p>This featured allowed for the user to create a question-set and save it locally. If time had allowed, this feature would have been extended to allow question-sets to be shared and eventually some sort of platform.</p>
                 <div class="vertical-image-container">
-                    <img class="vertical-screencap-media" src="Resources/Images/quiz-app-question-maker-1.png"/>
-                    <img class="vertical-screencap-media" src="Resources/Images/quiz-app-question-maker-2.png"/>
-                    <img class="vertical-screencap-media" src="Resources/Images/quiz-app-question-maker-3.png"/>
-                    <img class="vertical-screencap-media" src="Resources/Images/quiz-app-question-maker-4.png"/>
+                    <img class="vertical-screencap-image" src="Resources/Images/quiz-app-question-maker-1.png"/>
+                    <img class="vertical-screencap-image" src="Resources/Images/quiz-app-question-maker-2.png"/>
+                    <img class="vertical-screencap-image" src="Resources/Images/quiz-app-question-maker-3.png"/>
+                    <img class="vertical-screencap-image" src="Resources/Images/quiz-app-question-maker-4.png"/>
                 </div>
             </article>
         </section>
@@ -124,6 +128,7 @@
             </article>
             
         </section>
+        
         <section id="lessons">
             <h2><a style="color: mediumseagreen">#</a> Lessons</h2>
             <article>
@@ -134,18 +139,44 @@
                 <h3>Prototypes</h3>
                 <p>Prototypes are prototypes, not early versions of your product. Inconsistent UI.</p>
                 -->
-                <h3>The road ahead</h3>
-                <p>Even though the brief was completed in full and all deadlines were met, the app was still cancelled. I think there is a lesson to be learned from the story of how the app started and how it ended.</p>
-                <p>The app started as a marketing tool for the businesses’ LMS software <em>InformaOne</em>. Our target user was an instructor at a police or firefighter academy. They would use our software as a fun tool to liven up dry classes, and in return this would generate interest in our main software.</p>
-                <p>During development, scope crept. We used the app “Kahoot” as a reference as it is a best-of-class example for multiplayer quiz apps. Kahoot is a fantastically successful company, valued north of $300m. This starts the inevitable thoughts: “if our base app does the same thing, why not try take a slice of the same pie?”. We slowly transitioned from a marketing tool into a Kahoot competitor.</p>
-                <p>The need for a question-set creator was there from the start, but now it we would need some kind of sharing platform, which would require some kind of curation system, which requires some kind of rating system. <em>Some kind</em> is the indicator of scope creep.</p>
-                <p>Alongside these new features, the app, which was still technically a prototype, was far off the polished UI and UX of Kahoot. This was ultimately why it was cancelled as the business decided it would be too costly to compete with the much larger, much better funded Kahoot studio.</p>
-                <p>The app was cancelled for a reason that shouldn’t have applied to it. I can’t criticise management in this decision as I was equally complicit: the thought of being in at the ground floor of a potentially multi-million dollar app was just too inviting. Management and I bounced ideas off each other and said yes without properly thinking through what yes really meant. It’s easy to say “yes” today, but hard to implement “yes” tomorrow, and even hard to make a project successful when twenty “yesses” has cornered your product.</p>
-                <p>I have thought of many questions now that would have been useful to ask myself back then, but for the sake of memorability I think of just this one: What is the intention of this new pivot in relation to the original concept? Just answering this one question helps you retrace how you got from 0 to where you are now, which grounds you regarding your next potential step.</p>
-                
+                               
+                <button class="accordion">
+                    <p>Original ideas</p>
+                </button>
+                <div class="panel">
+                    <p>Even though the brief was completed in full and all deadlines were met, the app was still cancelled. I think there is a lesson to be learned from the story of how the app started and how it ended.</p>
+                    <p>The app started as a marketing tool for the businesses’ LMS software <em>InformaOne</em>. Our target user was an instructor at a police or firefighter academy. They would use our software as a fun tool to liven up dry classes, and in return this would generate interest in our main software.</p>
+                    <p>During development, scope crept. We used the app “Kahoot” as a reference as it is a best-of-class example for multiplayer quiz apps. Kahoot is a fantastically successful company, valued north of $300m. This starts the inevitable thoughts: “if our base app does the same thing, why not try take a slice of the same pie?”. We slowly transitioned from a marketing tool into a Kahoot competitor.</p>
+                    <p>The need for a question-set creator was there from the start, but now it we would need some kind of sharing platform, which would require some kind of curation system, which requires some kind of rating system. <em>Some kind</em> is the indicator of scope creep.</p>
+                    <p>Alongside these new features, the app, which was still technically a prototype, was far off the polished UI and UX of Kahoot. This was ultimately why it was cancelled as the business decided it would be too costly to compete with the much larger, much better funded Kahoot studio.</p>
+                    <p>The app was cancelled for a reason that shouldn’t have applied to it. I can’t criticise management in this decision as I was equally complicit: the thought of being in at the ground floor of a potentially multi-million dollar app was just too inviting. Management and I bounced ideas off each other and said yes without properly thinking through what yes really meant. It’s easy to say “yes” today, but hard to implement “yes” tomorrow, and even hard to make a project successful when twenty “yesses” has cornered your product.</p>
+                    <p>I have thought of many questions now that would have been useful to ask myself back then, but for the sake of memorability I think of just this one: What is the intention of this new pivot in relation to the original concept? Just answering this one question helps you retrace how you got from 0 to where you are now, which grounds you regarding your next potential step.</p>
+                </div>
+
+                <button class="accordion">
+                    <p>Prototypes</p>
+                </button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">
+                    <p>The Unfamiliar</p>
+                </button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+
             </article>
         </section>
-        
+
+        <section id="next">
+            <h2><a style="color: mediumseagreen">#</a> Next</h2>
+            <article>
+                <p>Return to projects page <a href="projects.html">here</a>.</p>
+            </article>
+        </section>
 
         
         
@@ -156,4 +187,22 @@
             <li>&copy; 2020, all rights reserved</li>
         </ul>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        console.log("Accordions found: " + acc.length);
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 </body>

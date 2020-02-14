@@ -96,6 +96,22 @@
     overflow: hidden;
 }
 
+.job-text a {
+    background: linear-gradient(135deg, rgba(173,255,118,1) 0%, rgba(135,235,255,1) 100%);
+    color: black;
+    border-radius: 0.25rem;
+    padding: 0rem 0.25rem;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.job-text a:hover {
+    
+    color: white;
+    letter-spacing: 0.05rem;
+    transition: 0.12s;
+}
+
 .job-text p {
     color: rgb(102, 102, 102);
 }
