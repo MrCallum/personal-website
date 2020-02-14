@@ -1,5 +1,6 @@
 .project-logo {
     display: flex;
+    margin-bottom: 1rem;
 }
 
 
@@ -64,7 +65,10 @@
         background-position-x: 75%;
     }    
     
-    
+    .project-logo img{
+        height: 5rem;
+        margin-right: 1rem;
+    }
 
     .vertical-screencap-image{
         width: 90%;
