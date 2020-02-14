@@ -72,7 +72,7 @@
         </section>
 
         <section id="gameplay">
-            <h2><a style="color: mediumseagreen">#</a> Gameplay</h2>
+            <h2><a style="color: rgb(215, 238, 171)">#</a> Gameplay</h2>
             <article>
                 
                 <h3>General</h3>
@@ -112,7 +112,7 @@
         </section>
 
         <section id="technologies">
-            <h2><a style="color: mediumseagreen">#</a> Technologies</h2>
+            <h2><a style="color: lightblue">#</a> Technologies</h2>
             <article>
                 <div class="project-logo" style="margin-top: 2rem;">
                     <img src="https://i.redd.it/estpv0c6iw841.jpg"/>
@@ -130,15 +130,9 @@
         </section>
         
         <section id="lessons">
-            <h2><a style="color: mediumseagreen">#</a> Lessons</h2>
+            <h2><a style="color: rgb(10, 145, 190)">#</a> Lessons</h2>
             <article>
                 <p>Here is a collection of thoughts and lessons learned, written with over a year to reflect. </p>
-                <!--
-                <h3>The unfamiliar</h3>
-                <p>Going through the app now, I am still impressed how well the real-time database works. [tell the story</p>
-                <h3>Prototypes</h3>
-                <p>Prototypes are prototypes, not early versions of your product. Inconsistent UI.</p>
-                -->
                                
                 <button class="accordion">
                     <p>Original ideas</p>
@@ -154,19 +148,28 @@
                 </div>
 
                 <button class="accordion">
-                    <p>Prototypes</p>
+                    <p>Prototyping</p>
+                </button>
+                <div class="panel">
+                    <p>When I look at the app now, approximately one year after development stopped, it is much easier for me to judge the UI in an objective way. One thing that has struck me is how some of the UI looks not bad. Not bad UI is not good.</p>
+                    <p>First, let’s talk about Unity as a UI producing tool. Unity’s UI creator is almost entirely visual, and then manipulated in script:</p>
+                    <ul>
+                        <li>Each element must be defined by creating and sizing boxes, anchoring them to other elements and nesting them inside hierarchies.</li>
+                        <li>Colors and styles are manually defined, element by element.</li>
+                        <li>Animations are created by manually lerping transforms.</li>
+                        <li>Allowing the player to interact with the UI, having dynamic text etc involves a lot of “wiring up”: a manual process of writing specific controller scripts, defining variables in these scripts and dragging and dropping in real-world elements. </li>
+                    </ul>
+                    <p>The Unity UI system is comparable to a visual prototyping tool, except you never move on from it when you’re done prototyping! As such, a developer is even more incentivized to keep their prototype simple within Unity as adding a small amount of complexity compounds faster than in more traditional app development tools.</p>
+                    <p>This was a lesson I did not fully heed during the app’s development. What I was building was a prototype for a real-time multiplayer quiz: at the heart of this task is a technology that I had not worked with (Google Firebase Real-time database). The prototype’s UI should have been as basic as possible until I had made this technology work. Instead, I straddled the costly grey-zone of “alright UI” which made dealing with this core, project-deciding issue a longer and more complex process.</p>
+                    <p>The even more perplexing thing of this “alright UI” is how I knew it would be thrown and redone for production, yet I persisted. I’ve come to believe that this is a symptom of final product thinking: you are so sure that the final product will be good that you don’t consider that any steps to getting to that final product may not succeed. In other words, “why not make it feel more real, because everything will be fine, right?”. </p>
+                    <p>Given distance, we all know that things may not be alright; no project is ever a sure shot. This optimistic frame of mind is easy to succumb to when you are passionate about something and don’t want it to fail. However, the healthy approach is to treat each project with objectivity, to try your best on each project-critical challenge, but admit when it won’t work. As such, you should be proud of boring UI in your prototype, it means you have your feet on the ground.</p>
+                </div>
+                <button class="accordion">
+                    <p>The Unknown</p>
                 </button>
                 <div class="panel">
                     <p>Coming soon. Please check in later, this is a good one.</p>
                 </div>
-
-                <button class="accordion">
-                    <p>The Unfamiliar</p>
-                </button>
-                <div class="panel">
-                    <p>Coming soon! It takes awhile to write these....</p>
-                </div>
-
 
             </article>
         </section>
@@ -190,7 +193,6 @@
 
     <script>
         var acc = document.getElementsByClassName("accordion");
-        console.log("Accordions found: " + acc.length);
         var i;
         
         for (i = 0; i < acc.length; i++) {
