@@ -68,6 +68,8 @@
     .project-logo img{
         height: 5rem;
         margin-right: 1rem;
+        border: 1px solid black;
+        border-radius: 15px;
     }
 
     .vertical-screencap-image{
