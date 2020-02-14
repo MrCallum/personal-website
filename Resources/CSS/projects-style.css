@@ -64,16 +64,15 @@
         background-position-x: 75%;
     }    
     
-    .vertical-image-container img{
-        height: 40rem;
-    }
+    
 
     .vertical-screencap-image{
-        height: 40rem;
+        width: 90%;
+        height: auto;
     }
 
     .vertical-screencap-video {
-        width: 70%;
+        width: 90%;
         height: auto;
     }
 
