@@ -49,6 +49,24 @@ a {
     color: inherit;
 }
 
+.expnd-text-button {
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(191, 243, 253) 100%);
+    border-radius: 10px;
+    
+}
+
+.extra-text {
+    /* currently only used on spans within project blogs 
+    visibility: hidden;
+    position: absolute;
+    */
+    border-radius: 10px;
+    font-style: oblique;
+    
+}
+
+
+
 nav ul, footer ul {
     list-style-type: none;
     padding: 1rem;
