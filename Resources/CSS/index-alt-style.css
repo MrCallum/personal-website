@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 100%;
+    font-size: 18px;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+   
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#sections {
+    height: inherit;
+}
+
+
+.full-page-background {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 2rem;
+  filter: grayscale(25%);
+}
+
+
+h1 {
+    
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+    text-transform: lowercase;
+}
+
+p, li {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: inherit; 
+}
+
+article {
+    width: 75%;
+    overflow: hidden;
+}
+
+.icon-bar {
+    width: 20%;
+    padding: 1rem 0 0 0;
+    opacity: 1;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+}
+  
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+  
+.icon-bar a:hover {
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+.active {
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+
+#about {
+    background-image: url("../Images/PageImages/callum-beach.jpg");
+}
+
+#past {
+    background-image: url("../Images/PageImages/cliff-tom.JPG");
+}
+
+#interests {
+    background-image: url("../Images/PageImages/gang-holds-charlie.JPG");
+}
+
+#contact {
+    background-image: url("../Images/PageImages/laura-river.JPG");
+}
+
+#next {
+    background-image: url("../Images/PageImages/callum-and-rory.JPG");
+}
+
+#future {
+    background-image: url("../Images/PageImages/group-beach-running.JPG");
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+
+    body {
+        background-color: black;
+        height: 100%;
+        width: 100% ;
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        max-width: 50%;
+    }
+    
+    p {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    li {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    #interests {
+        background-image: url("../Images/PageImages/gang-italy-mountain.jpg");
+    }
+
+    #past {
+        background-position-x: 75%;
+    }
+
+
+
+    .icon-bar {
+        width: auto;
+        padding: 1rem 1rem 0 0;
+        opacity: 1;
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: inherit;
+        bottom: 0; 
+        right: 0;
+    }
+
+    .icon-bar a {
+        font-size: 3rem;
+    }
+}
