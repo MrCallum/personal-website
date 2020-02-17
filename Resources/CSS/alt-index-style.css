@@ -12,7 +12,7 @@ html {
 body {
     background-color: black;
     height: 100%;
-   
+    width: 80%;
 }
 
 body::-webkit-scrollbar {
@@ -58,34 +58,63 @@ article {
     overflow: hidden;
 }
 
-.icon-bar {
-    width: 20%;
-    padding: 1rem 0 0 0;
+
+.icon-bar-mobile {
+    visibility: hidden;
+    width: auto;
+    padding: 1rem 1rem 0 0;
     opacity: 1;
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    position: fixed;
+    z-index: 1;
+    top: inherit;
+    bottom: 0; 
     right: 0;
 }
-  
-.icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    margin-bottom: 5px;
-    transition: all 0.3s ease;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-}
-  
-.icon-bar a:hover {
-    background-color: rgba(0, 0, 0, 0.425);
+
+.icon-bar-desktop {
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    right: 0;
 }
 
-.active {
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.425);
+.desktop-links-holder {
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 0.25rem;
+    
+}
+
+.desktop-links-holder a{
+    text-decoration: none;
+}
+
+/* .active-page::before {
+    content: "\2022";
+    font-size: 40px;
+    position: absolute;
+    color: pink;
+    left: 5%;
+} */
+
+.active-page {
+    color: rgb(255, 217, 0);
+}
+
+.line {
+    height: 1px;
+    background-color: white;
+    margin: 20%;
+}
+
+
+.dbs-image {
+    display: block;
+    margin: 25% auto;
+    width: 50%;
+    max-width: 100px;
+    border-radius: 50%;
 }
 
 
@@ -113,6 +142,11 @@ article {
     background-image: url("../Images/PageImages/group-beach-running.JPG");
 }
 
+
+
+
+
+
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
 
     body {
@@ -135,7 +169,7 @@ article {
     }
 
     li {
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 3rem;
     }
 
@@ -149,15 +183,12 @@ article {
 
 
 
-    .icon-bar {
-        width: auto;
-        padding: 1rem 1rem 0 0;
-        opacity: 1;
-        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-        top: inherit;
-        bottom: 0; 
-        right: 0;
+    .icon-bar-mobile {
+        visibility: visible;
+    }
+
+    .icon-bar-desktop {
+        visibility: hidden;
     }
 
     .icon-bar a {
