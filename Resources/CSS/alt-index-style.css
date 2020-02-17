@@ -177,8 +177,28 @@ article {
         background-image: url("../Images/PageImages/gang-italy-mountain.jpg");
     }
 
+    #about {
+        background-image: url("../Images/PageImages/mobile/callum-beach.jpg");
+    }
+    
     #past {
-        background-position-x: 75%;
+        background-image: url("../Images/PageImages/mobile/cliff-tom.JPG");
+    }
+    
+    #interests {
+        background-image: url("../Images/PageImages/mobile/gang-holds-charlie.JPG");
+    }
+    
+    #contact {
+        background-image: url("../Images/PageImages/mobile/laura-river.JPG");
+    }
+    
+    #next {
+        background-image: url("../Images/PageImages/mobile/callum-and-rory.JPG");
+    }
+    
+    #future {
+        background-image: url("../Images/PageImages/mobile/group-beach-running.JPG");
     }
 
 
