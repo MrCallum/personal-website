@@ -118,34 +118,7 @@ article {
 }
 
 
-
 #about {
-    background-color: rgb(159, 236, 159);
-}
-
-#past {
-    background-color: rgb(159, 236, 226);
-}
-
-#future {
-    background-color: rgb(159, 183, 236);
-}
-
-#interests {
-    background-color: rgb(229, 159, 236);
-}
-
-#contact {
-    background-color: rgb(236, 159, 176);
-}
-
-#next {
-    background-color: rgb(236, 215, 159);
-}
-
-
-
-/* #about {
     background-image: url("../Images/PageImages/callum-beach.jpg");
 }
 
@@ -167,7 +140,7 @@ article {
 
 #future {
     background-image: url("../Images/PageImages/group-beach-running.JPG");
-} */
+}
 
 
 
@@ -200,7 +173,7 @@ article {
         line-height: 3rem;
     }
 
-    /* #interests {
+    #interests {
         background-image: url("../Images/PageImages/gang-italy-mountain.jpg");
     }
 
@@ -226,7 +199,7 @@ article {
     
     #future {
         background-image: url("../Images/PageImages/mobile/group-beach-running.JPG");
-    } */
+    }
 
 
 
