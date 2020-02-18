@@ -11,7 +11,6 @@ html {
 
 body {
     background-color: black;
-    height: 100%;
     width: 80%;
 }
 
@@ -19,19 +18,20 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-#sections {
-    height: inherit;
+html, body, #fullpage, .section, .full-page-background {
+    height: 100%;
 }
 
 
-.full-page-background {
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
-  padding: 2rem;
-  filter: grayscale(25%);
+.full-page-background {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 2rem;
+    filter: grayscale(25%);
 }
 
 
@@ -99,13 +99,11 @@ article {
 } */
 
 .active-page {
-    color: rgb(255, 217, 0);
+    color: rgb(255, 131, 100);
 }
 
-.line {
-    height: 1px;
-    background-color: white;
-    margin: 20%;
+.active-page::before {
+    
 }
 
 
@@ -124,11 +122,15 @@ article {
 
 #past {
     background-image: url("../Images/PageImages/cliff-tom.JPG");
+    background-position: right;
 }
 
 #interests {
-    background-image: url("../Images/PageImages/gang-holds-charlie.JPG");
+    background-image: url("../Images/banner-image-Callum-in-river.JPG");
+    
 }
+
+
 
 #contact {
     background-image: url("../Images/PageImages/laura-river.JPG");
@@ -148,6 +150,7 @@ article {
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+
 
     body {
         background-color: black;
@@ -179,15 +182,14 @@ article {
 
     #about {
         background-image: url("../Images/PageImages/mobile/callum-beach.jpg");
+        background-position: right;
     }
     
     #past {
         background-image: url("../Images/PageImages/mobile/cliff-tom.JPG");
     }
     
-    #interests {
-        background-image: url("../Images/PageImages/mobile/gang-holds-charlie.JPG");
-    }
+    
     
     #contact {
         background-image: url("../Images/PageImages/mobile/laura-river.JPG");
@@ -200,8 +202,6 @@ article {
     #future {
         background-image: url("../Images/PageImages/mobile/group-beach-running.JPG");
     }
-
-
 
     .icon-bar-mobile {
         visibility: visible;
