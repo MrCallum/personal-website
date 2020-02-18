@@ -36,11 +36,10 @@ html, body, #fullpage, .section, .full-page-background {
 
 
 h1 {
-    
     font-size: 4rem;
     font-weight: 100;
     margin-bottom: 1.5rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 
 p, li {
@@ -115,15 +114,15 @@ article {
     border-radius: 50%;
 }
 
-#scroll-arrow {
+#scroll-arrow-container {
+    width: 90%;
     text-align: center;
     position: absolute;
     bottom: 10%;
-    left: 40%;
 }
 
-#scroll-arrow img {
-    max-width: 50%;
+#scroll-arrow-container img {
+    max-width: 70px;
 }
 
 #about {
@@ -225,7 +224,7 @@ article {
         font-size: 3rem;
     }
 
-    #scroll-arrow img {
+    #scroll-arrow-container img {
         max-width: 80%;
     }
 }
