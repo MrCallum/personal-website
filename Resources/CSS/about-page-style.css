@@ -1,100 +1,236 @@
-.card-holder {
-    margin-top: 2rem;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 100%;
+    font-size: 18px;
+}
+
+body {
+    background-color: black;
+    width: 80%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html, body, #fullpage, .section, .full-page-background {
+    height: 100%;
 }
 
 
 
+.full-page-background {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.card {
-    padding: 1rem;
-    margin: 1rem;
-    display: inline-block;
-    position: relative;
-    width: 15rem;
-    height: 15rem;
+    padding: 2rem;
+    filter: grayscale(25%);
+}
 
-    text-align: center;
+
+h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
     text-transform: capitalize;
+}
+
+p, li {
+    line-height: 2rem;
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.card p {
-    font-style: italic;
+a {
+    color: inherit;
+    text-decoration: none;
+    /* this is so mobile menu doesn't have underlines while in body links do */
+}
+
+.full-page-background a {
+    text-decoration: underline;
+}
+
+article {
+    width: 75%;
+    overflow: hidden;
 }
 
 
-.card::after {
-    content: "";
-    
-    background-position: center;
-    background-size: cover;
-    background-image: url("https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/health-benefits-of-apples-1296x728-feature.jpg?w=1155&h=1528");
-    
-    border-radius: 15px;
-    
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
+.icon-bar-mobile {
+    visibility: hidden;
+    width: auto;
+    padding: 1rem 1rem 0 0;
+    opacity: 1;
+    position: fixed;
+    z-index: 1;
+    top: inherit;
+    bottom: 0; 
     right: 0;
+}
+
+.icon-bar-desktop {
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    right: 0;
+}
+
+.desktop-links-holder {
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 0.25rem;
+    
+}
+
+.desktop-links-holder a{
+    text-decoration: none;
+}
+
+/* .active-page::before {
+    content: "\2022";
+    font-size: 40px;
     position: absolute;
-    z-index: -1;  
-    
-    border-radius: 40px; 
-    
+    color: pink;
+    left: 5%;
+} */
+
+.active-page {
+    color: rgb(255, 131, 100);
 }
 
-
-#card-UX::after {
-    background: url("https://careerfoundry.com/en/blog/uploads/what-does-a-ux-designer-do-header-image.jpg");
-    background-position: center;
-    background-size: cover;
+.active-page::before {
     
 }
 
 
-#card-film::after {
-    background: url("https://i.ytimg.com/vi/a2wO0S4RLCg/maxresdefault.jpg");
-    background-position: center;
-    background-size: cover;
+.dbs-image {
+    display: block;
+    margin: 25% auto;
+    width: 50%;
+    max-width: 100px;
+    border-radius: 50%;
 }
 
-#card-reading::after {
-    background: url("https://longreadsblog.files.wordpress.com/2019/01/GettyImages-955854460.jpg?w=1200");
-    background-position: center;
-    background-size: cover;
+#scroll-arrow-container {
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
 }
 
-#card-learning::after {
-    background: url("https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/01/08/12/ilya-pavlov-87438-unsplash.jpg?w968");
-    background-position: center;
-    background-size: cover;
+#scroll-arrow-container img {
+    max-width: 70px;
 }
 
-#card-exercise::after {
-    background: url("https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    background-position: center;
-    background-size: cover;
+#about {
+    background-image: url("../Images/PageImages/callum-beach.jpg");
 }
 
-#card-pub-quiz::after {
-    background: url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
-    background-position: center;
-    background-size: cover;
+#past {
+    background-image: url("../Images/PageImages/cliff-tom.JPG");
+    background-position: right;
 }
+
+#interests {
+    background-image: url("../Images/banner-image-Callum-in-river.JPG");
+    
+}
+
+
+
+#contact {
+    background-image: url("../Images/PageImages/laura-river.JPG");
+}
+
+#next {
+    background-image: url("../Images/PageImages/callum-and-rory.JPG");
+}
+
+#future {
+    background-image: url("../Images/PageImages/group-beach-running.JPG");
+}
+
+
+
+
+
 
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
-    .card {
-        width: 60%;
-        font-size: 2.5rem;
-    }   
 
-    .card p{
-        font-size: 2.5rem;
+
+    body {
+        background-color: black;
+        height: 100%;
+        width: 100% ;
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        max-width: 50%;
+    }
+    
+    p {
+        font-size: 3rem;
         line-height: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    li {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    #interests {
+        background-image: url("../Images/PageImages/gang-italy-mountain.jpg");
+    }
+
+    #about {
+        background-image: url("../Images/PageImages/mobile/callum-beach.jpg");
+        background-position: right;
+    }
+    
+    #past {
+        background-image: url("../Images/PageImages/mobile/cliff-tom.JPG");
+    }
+    
+    
+    
+    #contact {
+        background-image: url("../Images/PageImages/mobile/laura-river.JPG");
+    }
+    
+    #next {
+        background-image: url("../Images/PageImages/mobile/callum-and-rory.JPG");
+    }
+    
+    #future {
+        background-image: url("../Images/PageImages/mobile/group-beach-running.JPG");
+    }
+
+    .icon-bar-mobile {
+        visibility: visible;
+    }
+
+    .icon-bar-desktop {
+        visibility: hidden;
+    }
+
+    .icon-bar a {
+        font-size: 3rem;
+    }
+
+    #scroll-arrow-container img {
+        max-width: 80%;
     }
 }

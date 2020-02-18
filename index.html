@@ -1,186 +1,135 @@
 <!DOCTYPE html>
 <head>
-    <title>Callum | about</title>
-    
-    <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet"> 
-    <link href="./Resources/CSS/mobile-menu-style.css" type="text/css" rel="stylesheet"> 
-    <link href="./Resources/CSS/about-page-style.css" type="text/css" rel="stylesheet"> 
+    <title>Callum Morrison | V2</title>
+    <link href="./Resources/CSS/about-page-style.css" type="text/css" rel="stylesheet">
+    <link href="./Resources/CSS/mobile-menu-style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./Resources/Images/Favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Resources/Images/Favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Images/Favicons/favicon-16x16.png">
-    
-    <script src="Resources/JavaScript/MobileMenu.js"></script>
-
-
 </head>
 <body>
     <header>
-        <div id="header-about" class="header-image">
-            <div id="mobile-menu">
-                <p onclick="closeMobileMenu()">close</p>
-                <ul>
-                    <li id="current-page-anchor-mobile"><a>About</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </div>
-
-            <nav>
-                <ul>
-                    <li id="mobile-menu-button" onclick="openMobileMenu()">Menu</li>
-                    <li id="current-page-anchor" class="desktop-nav-button">About</li>
-                    <li class="desktop-nav-button"><a href="cv.html">CV</a></li>
-                    <li class="desktop-nav-button"><a href="projects.html">Projects</a></li>
-                </ul>
-            </nav>
-    
-            <div id="header_container">
-                <h1>Callum Morrison</h1>
-            </div>
+        <div id="mobile-menu">
+            <p id="mobile-menu-close" onclick="closeMobileMenu()">close</p>
+            <ul>
+                <li id="current-page-anchor-mobile"><a> About</a></li>
+                <li><a href="./cv.html">CV</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+            </ul>
         </div>
+        <nav>
+            <div class="icon-bar-mobile">
+                <p class="animated fadeInRight delay-4s" onclick="openMobileMenu()">menu</p> 
+            </div>
+            <div class="icon-bar-desktop">
+                <img class="dbs-image" src="./Resources/Images/Sophie solo no colar.png">
+                
+                <div class="desktop-links-holder">
+                    <p class="active-page">About</p>
+                    <p><a href="./cv.html">CV</a></p>
+                    <p><a href="./projects.html">Projects</a></p>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <main>
-        <div id="dbs-logo-holder">
-            <img id="dbs-logo"src="Resources\Images\Sophie solo no colar.png">
-        </div>
-        <section id="post-meta">
-            
-            <p>By <a>Callum Morrison</a></p>
-            <p>10-Jan-2020</p>
-            <!--
-            <div class="icon-container">
-                <img class="icon" src="https://img.icons8.com/small/50/000000/filled-message.png">
-                <img class="icon" src="https://img.icons8.com/small/16/000000/coffee.png">
-                <img class="icon" src="https://img.icons8.com/small/16/000000/speech-bubble-with-dots.png">
-
-            </div>
-            -->
-        </section>
-        
-        <section id="about">
-            <h2><a style="color: mediumseagreen">#</a> About</h2>
-            <article>
-                <p>Hello, I'm Callum. I'm an Edinburgh based web developer / product owner.</p>
-                <p>This website is pretty new (launched Jan 2020). I'll be adding my side projects in the coming months. Please check back in later, i'm sure you're dying to see them.</p>
-                <p>If you have any feedback or advice, or just want to get in touch, please email me <a href="#contact">here</a>.</p>
-                <p>Thanks very much!</p>
-                <p>(P.S.Please take the quotes with a pinch of salt, I just love their formatting.)</p>
-            </article>
-            
-        </section>
-
-        <div class="pull-quote-container">
-            <p class="pull-quote">I’m still learning</p>
-            <p class="pull-quote-author">- Michelangelo</p>
-        </div>
-
-        <section id="history">
-            <h2><a style="color: rgb(215, 238, 171)">#</a> History</h2>
-            <article>
-                <p>If you want to see a full CV, go <a href="cv.html">here</a>. Here's a brief version:</p>
-                <ul>
-                    <li>Born in Aberdeen, raised in the Highlands</li>
-                    <li>Studied at RGU</li>
-                    <li>Worked for a few years in Finance.</li>
-                    <li>Worked the last few years as a developer / manager</li>
-                    <li>Made this website</li>
-                </ul>
-            </article>
-            
-        </section>
-
-        <div class="pull-quote-container">
-            <p class="pull-quote">If you don’t find the time, if you don’t do the work, you don’t get the results</p>
-            <p class="pull-quote-author">- Schwarzenegger</p>
-        </div>
-        
-        <section id="Hobbies">
-            <h2><a style="color: lightblue">#</a> Hobbies</h2>
-            <article>
-                <p>Here's how I generally spend my time.</p>
-            </article>
-            <div class="card-holder">
-                <div class="card" id="card-film">
-                    <div style="height: 25%;">
-                        <h3>Cinema</h3>
-                    </div>
-                    <div style="height: 75%;">
-                        <p>Actually in the cinema, if possible</p>
-                    </div>
-                </div>
-
-                <div class="card" id="card-reading">
-                    <div style="height: 25%;">
-                        <h3>Reading</h3>
-                    </div>
-                    <div style="height: 75%;">
-                        <p>Mostly popular science and behavioral psychology</p>
-                    </div>
-                </div>
-
-                <div class="card" id="card-learning">
-                    <div style="height: 25%;">
-                        <h3>Learning</h3>
-                    </div>
-                    <div style="height: 75%;">
-                        <p>Currently React and TypeScript</p>
-                    </div>
-                </div>
-
-                <div class="card" id="card-exercise">
-                    <div style="height: 25%;">
-                        <h3>Fitness</h3>
-                    </div>
-                    <div style="height: 75%;">
-                        <p>Gym, running and occasionally badminton</p>
-                    </div>
-                </div>
-                <div class="card" id="card-pub-quiz">
-                    <div style="height: 25%;">
-                        <h3>Pub Quiz</h3>
-                    </div>
-                    <div style="height: 75%;">  
-                        <p>My favourite way to socialise</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <div class="pull-quote-container">
-            <p class="pull-quote">The ability to observe without evaluating is the highest form of intelligence</p>
-            <p class="pull-quote-author">- Krishnamurti</p>
-        </div>
-
-        <section id="next">
-            <h2><a style="color: rgb(10, 139, 190)">#</a> Next</h2>
-            <article>
-                <p>Some suggested pages...</p>
-                <ul>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="contact">
-            <h2><a style="color: rgb(99, 77, 221)">#</a> Contact Me</h2>
-            <article>
-                <p>Feel free to send me an email at mrcallummorrison@gmail.com</p>
-            </article>
-        </section>
-        
-    </main>
-    <footer>
-        <ul>
-            <li>Callum Morrison</li>
-            <li>&copy; 2020, all rights reserved</li>
-        </ul>
-    </footer>
     
+    
+    
+    <div id="fullpage">
+        <div class="section">
+            <div class="full-page-background" id="about">
+                <h1 class="animated fadeInUp slow">Callum Morrison</h1>
+                <article class="animated fadeInUp delay-2s slow">
+                    <p>Hello, I'm Callum. I'm an Edinburgh based web developer / product manager.</p>
+                </article>
+                <div id="scroll-arrow-container">
+                    <img 
+                    class="animated fadeInDown delay-5s slow" 
+                    src="./Resources/Images/down-arrow.png">
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="full-page-background" id="past">
+                <h1>past</h1>
+                <article>
+                    <p>If you want to see a full CV, go <a href="cv.html">here</a>. Brief version:</p>
+                    <ul>
+                        <li>Born in Aberdeen, raised in the Highlands</li>
+                        <li>Studied at RGU</li>
+                        <li>Worked for a few years in Finance</li>
+                        <li>Worked the last few years as a developer / manager</li>
+                        <li>Made this website</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="full-page-background" id="future">
+                <h1>future</h1>
+                <article>
+                    <p>Looking to progress a career in web development. I would like to work in a company that describes itself like this:</p>
+                    <ul>
+                        <li>Ambitious</li>
+                        <li>Creative</li>
+                        <li>Curious</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="full-page-background" id="interests">
+                <h1>interests</h1>
+                <article>
+                    <ul>
+                        <li>Cinema</li>
+                        <li>Fitness</li>
+                        <li>Reading</li>
+                        <li>Learning</li>
+                        <li>Pub Quiz</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="full-page-background" id="contact">
+                <h1>contact</h1>
+                <article>
+                    <p>Feel free to send me an email at mrcallummorrison @gmail.com</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="full-page-background" id="next">
+                <h1>next</h1>
+                <article>
+                    <p>Some suggested pages...</p>
+                    <ul>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
+    <script>
+        const isTouch = "ontouchstart" in window;
+        if(isTouch){
+
+        } else {
+            new fullpage('#fullpage', {
+            
+            });
+        }
+    </script>
+    <script src="./Resources/JavaScript/MobileMenu.js"></script>
 </body>
