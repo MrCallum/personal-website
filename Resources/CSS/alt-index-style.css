@@ -115,6 +115,16 @@ article {
     border-radius: 50%;
 }
 
+#scroll-arrow {
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+#scroll-arrow img {
+    max-width: 50%;
+}
 
 #about {
     background-image: url("../Images/PageImages/callum-beach.jpg");
@@ -213,5 +223,9 @@ article {
 
     .icon-bar a {
         font-size: 3rem;
+    }
+
+    #scroll-arrow img {
+        max-width: 80%;
     }
 }
