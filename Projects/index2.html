@@ -46,7 +46,7 @@
                 </article>
             </div>
         </div>
-
+        
         <div class="section">
             <div class="full-page-background" id="past">
                 <h1>past</h1>
@@ -116,14 +116,13 @@
         
         
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
     <script>
         const isTouch = "ontouchstart" in window;
         if(isTouch){
 
         } else {
-            document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>');
-            document.write('<script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>');
-
             new fullpage('#fullpage', {
             
             });
