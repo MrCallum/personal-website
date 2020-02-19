@@ -81,6 +81,7 @@
                 <h3>Basic Gameplay: Popping</h3>
                 <p>Screenshot is taken from the app store listing. </p>
                 <img class="vertical-screencap-image" src="../Resources/Images/cubefall/1 Export.png"/>
+                <p>'Popping' is the arcade part of Cubefall:</p>
                 <ul>
                     <li>Cubes slowly fall from the top of the screen. Each cube is either red, blue, green or yellow.</li>
                     <li>The player can tap to pop a cube, gaining points. To pop, you must have your UI colour-swatch selected on the same colour as the cube.</li>
@@ -98,32 +99,124 @@
                     <img class="vertical-screencap-image" src="../Resources/Images/cubefall/5 Export.png"/>
                     <img class="vertical-screencap-image" src="../Resources/Images/cubefall/6 Export.png"/>
                 </div>
-                <p>NB: I cite communicating the stacking concept as my biggest misstep: don't worry if you don't get it! Here is the gist of how it's done. I won't bore you with how you actually do it:</p>
+                <p>'Stacking' adds the puzzle element to Cubefall. NB: I cite communicating the stacking concept as my biggest misstep: don't worry if you don't get it! Here is the gist of how it's done; I won't bore you with how you actually do it:</p>
                 <ul>
                     <li>'Stacking' means to place one cube behind another. This can be done up to 5 times in a single 'stack'</li>
                     <li>A single cube is multiplied in value for how far back you get it. You can get up to x5 bonus.</li>
                     <li>You can <u>only</u> pop the front cube. After popping the front, the cubes behind slide forward, filling the gap.</li>
                     <li>If one cube in the stack dies, they all die.</li>
                 </ul>
-                
-                
-                
-                
-                <h3>Why bother with something that players couldn't understand?</h3>
-                <p>I've always found that the most engaging games have you do <em>at least</em> two things. Some general examples:</p>
+                <p>Now that you know the idea, here is a quick video (it also shows how when cubes die, they become physics based which I like very much):</p>
+                <video class="vertical-screencap-video" controls muted>
+                    <source src="../Resources/Videos/cubefall-video.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+
+
+
+
+
+                <p>Why bother with something that players couldn't understand? Why not cut it? See <a href="#lessons-1">Lesson 1</a> for my answer.</p>
+            
+                <h3>Modes</h3>
+                <p>The general flow of the game was this: </p>
                 <ul>
-                    <li>FPS = shooting + moving</li>
-                    <li>Strategy = Tactics + resource management</li>
-                    <li>Driving = just driving (only one thing = dull)</li>
+                    <li>Each mode has a set number of waves.</li>
+                    <li>Each wave has set properties: no. of cubes, types of cubes, spawn rate, spawn density and fall speed. </li>
+                    <li>Survive all the waves until the final wave.</li>
+                    <li>The final wave is a constant barrage until the screen fills up. This typically takes 20 seconds.</li>
                 </ul>
+                <p>I based the game around these stochastic waves. If a player simply pops every cube without stacking, they will get a minimal score. However, good players will use stacking to improve their scores, and very good players will use particular cube quirks and other high-risk tactics to get even higher scores. As such, the game becomes a puzzle under pressure. Even to this day I find the 
+                    <span class="expnd-text-button">
+                        gameplay engrossing.
+                    </span> <span class="extra-text">
+                        During one session, when I was testing the game on my phone pre-release, I missed my bus stop by two stops because I was so enthralled. Although annoying, this did make me happy.
+                    </span> 
+                </p>
+                <p>Cubefall featured 11 modes. They were all varients of the main mode such as no stacking, speed, 2D, no colour selector, and even two player (one screen split in two). Each felt distinct but my favourite is still 'classic' mode.</p>
+            </article>
+        </section>
+        <section>
+            <h2><a style="color: lightblue">#</a> Non-gameplay elements</h2>
+            <article>
+                <h3>Menus</h3>
+                <p>The following screenshots show all the major menus in the game:</p>
+                <div class="vertical-image-container">
+                    <img class="vertical-screencap-image" src="../Resources/Images/cubefall/cubefall-menu-1.png"/>
+                    <img class="vertical-screencap-image" src="../Resources/Images/cubefall/cubefall-menu-2.png"/>
+                    <img class="vertical-screencap-image" src="../Resources/Images/cubefall/cubefall-menu-3.png"/>
+                </div>
+                <p>looking back at this roughly two years later, I think they're not all that bad, but 
+                    <span class="expnd-text-button">
+                        not all that good either 
+                    </span> <span class="extra-text">
+                        The menus evolved out of necessity rather than having a design plan from the start. For example, in the first image you can see a line of symbols at the bottom of the screen: the intention of this was to make players scroll through and read the names and descriptions of the modes so they would be curious and keep playing.
+                        <br/>
+                        <br/>
+                        Another example is these orange notification markers. Again, these were added on top of an evolving menu, rather than a menu designed with notifications in mind. As such, they're not very clear, and having multiple, equal weighted markers likely confuses the player rather than focusing them
+                    </span> 
+                    
+                    
+                    . It's functional, and simple to understand, but not exactly up to the same standard as other apps. </p>
                 
-                <p>The benefit of adding a second mechanic is that if you understand it, and you understand how the two mechanics play off each other, the game will be more fun that either of those mechanics singly. However, if you don't understand one of the mechanics, the game will feel flat. </p>
-                <p>My attempt to make Cubefall engaging was to add a stacking mechanic. This literally and figuratively gave the game another dimension. Stacking added Risk vs Reward, and added a puzzle element to what was originally just arcade. Unfortunately, since I didn't explain stacking well, most players didn't 'play the game right' and thus didn't find it much fun.</p>
+                <p>If I was to design the menu now, I would likely opt for a much cleaner, more focused menu. I would try make the player think less and get to games faster. Some ideas:</p>
+                <ul>
+                    <li>One page, scrollable</li>
+                    <li>Main game at the top, swipe left and right to navigate modes. Replace 3D icons with png icons + animations.</li>
+                    <li>Next section for daily mode</li>
+                    <li>Next section for your current combined score + place on leaderboard. Option to expand for more info.</li>
+                    <li>Possibly a social section next</li>
+                    <li>Instead of notifications to say a new mode has been unlocked, show an animation and scroll to this new mode automatically.</li>
+                    <li>Put in small settings icon with slide-out menu.</li>
+                </ul>
+                <p>With this simple design plan we go from 3 pages down to 1 and likely increase retention by making the player think less.</p>
+
+                <h3>Music</h3>
+                <p>I was incredibly happy with the music which was especially made for Cubefall by the very talented <a href="https://soundcloud.com/seanpett" target="blank">Sean Pett</a>. Here are the two songs used:</p>
+                <p>Menu music:</p>
+                <iframe  
+                    class="soundcloud-embed" 
+                    scrolling="no" 
+                    frameborder="no" 
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/448953474&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                
+                <p>In-game music:</p>
+                <iframe 
+                    class="soundcloud-embed" 
+                    scrolling="no" 
+                    frameborder="no" 
+                    allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/448954986&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <p>Sean's music delivered on the vague brief I gave him, and the final tracks far surpassed the quality I would have accepted; he really went above and beyond. As such, the music the game far more charm and personality than it was due. I was, and still am, amazed by these tracks.</p>
+                <h3>Languages</h3>
+                <p>A quirky feature of Cubefall was that it was available in the following "languages":</p>
+                <ul>
+                    <li>English</li>
+                    <li>Scottish Gaelic</li>
+                    <li>Glaswegian</li>
+                    <li>Doric</li>
+                </ul>
+                <p>This was a marketing gimmick and a number of Scottish newspapers ran my <a href="https://www.pressandjournal.co.uk/fp/business/north-of-scotland/1543779/three-scots-dialects-added-to-new-app-by-highland-developer/" target="blank">press release</a>. 
+                    <span class="expnd-text-button">
+                        It didn't really pay off
+                    </span> <span class="extra-text">
+                        Reason 1: Newspaper readers are (mostly) the wrong demographic for arcade mobile games.
+                        <br>
+                        <br>
+                        Reason 2: Paper newspapers don't have hyperlinks, and online newspapers don't provide hyperlinks (likely to maintain reader trust by avoiding dodgy links). Thus, readers had to look up my app manually in the app stores. To compound matters, there is only one "Cubefall: Stack and Pop", which is the full name of the app, but there are numerous "Cubefalls", "Cube Falls". 
+                        <br>
+                        <br>
+                        The eventual plan was to try get some of the large Scottish Twitter accounts to re-post these stories, which may have worked.
+                    </span> 
+                    , but it was a good introduction to doing a press release. My auntie is a journalist and she helped greatly in pulling this together.</p>
+                    <p>A greatly appreciate the help of all those who helped me (for free!) for these translations. My friend Steven Kellow did the Gaelic translations and he has a <a href="https://blog.stevenkellow.com/">blog</a> you may be interested in if you are a music fan.</p>
             </article>
         </section>
 
         <section id="technologies">
-            <h2><a style="color: lightblue">#</a> Technologies</h2>
+            <h2><a style="color: lightcoral">#</a> Technologies</h2>
             <article>
                 <div class="project-logo" style="margin-top: 2rem;">
                     <img src="https://i.redd.it/estpv0c6iw841.jpg"/>
@@ -138,15 +231,18 @@
                         I had completed various small courses as I worked in accounting, including <a href="https://www.udemy.com/course/unitycourse/" target="blank">Ben Tristem's Unity course</a>. I had put in possibly 100+ hours of work into Ben's course and decided to start my own project for practice purposes. This grew in scope until I had simply no choice but to leave my job and try make it on my own. What else was I to do? Accounting? I still haven't finished Ben's course.
                     </span> 
                 .</p>
-                <p><u>Unity</u>: During development of Cubefall, I simply 
+                <h3>Unity</h3>
+                <p>During development of Cubefall, I simply 
                     <span class="expnd-text-button">
                         loved using Unity
                     </span> <span class="extra-text">
                         Part of this was likely just a love of coding generally, but I did go as far as being excited for upcoming Unity conferences, watching presentations in full (2+ hours) to see what new features were being added. I've always wanted to get back and tinker with it, but just not had the time.
                     </span>
                 . Cubefall was not a demanding game and Unity handled it with ease. I used most of the major areas: scripting (coroutines, classes, events), physics, lighting, UI, save management, animation, touch-input handling, cameras, SFX, music etc. </p>
-                <p><u>Unity Services</u>: I used a number of Unity's in-built services, such as Unity Ads, Unity Analytics, Unity Collaborate and Unity IAPS. One fond memory was of using Analytics in the tutorial to see just how few people understood stacking. Sarcasm aside, it was satisfying to see IAPs and Ads in action - it gave the app a feeling of realness and a proud milestone of my developer skills.</p>
-                <p><u>Working on mobile</u>: I found working with aspect ratios of different mobile devices was a major time sink. When your camera is pointing at the gamespace, squatter devices are disadvantaged by having less vertical screen-space to watch for cubes coming down, and taller devices have  
+                <h3>Unity Services</h3>
+                <p>I used a number of Unity's in-built services, such as Unity Ads, Unity Analytics, Unity Collaborate and Unity IAPS. One fond memory was of using Analytics in the tutorial to see just how few people understood stacking. Sarcasm aside, it was satisfying to see IAPs and Ads in action - it gave the app a feeling of realness and a proud milestone of my developer skills.</p>
+                <h3>Working on mobile</h3>
+                <p>I found working with aspect ratios of different mobile devices was a major time sink. When your camera is pointing at the gamespace, squatter devices are disadvantaged by having less vertical screen-space to watch for cubes coming down, and taller devices have  
                     <span class="expnd-text-button">
                         extra space
                     </span> <span class="extra-text">
@@ -158,23 +254,33 @@
         </section>
         
         <section id="lessons-1">
-            <h2><a style="color: rgb(10, 145, 190)">#</a> Lessons 1: Knowing when to quit</h2>
+            <h2><a style="color: rgb(10, 145, 190)">#</a> Lessons 1: Tutorials</h2>
             <article>
                 
                 <div class="pull-quote-container">
-                    <p class="pull-quote">You've got to know when to hold 'em, know when to fold 'em...</p>
-                    <p class="pull-quote-author">Kenny Rogers</p>
+                    <p class="pull-quote">You cannot teach a man anything, you can only help him find it within himself.</p>
+                    <p class="pull-quote-author">Galileo</p>
                 </div>
-                <p>Coming soon!</p>
-                <p>In the mean time, here's some reading for all you latin visitors: Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cumque rerum facilis hic eveniet error magnam adipisci nam amet eaque mollitia perspiciatis, magni architecto, est sed ab officia placeat possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cumque rerum facilis hic eveniet error magnam adipisci nam amet eaque mollitia perspiciatis, magni architecto, est sed ab officia placeat possimus?</p>
+                <p>Coming soon! In the mean time, here's some the first part. A teaser trailer, if you will:</p>
+                <h3>Why bother with something that players couldn't understand?</h3>
+                <p>I've always found that the most engaging games have you do <em>at least</em> two things. Some general examples:</p>
+                <ul>
+                    <li>FPS = shooting + moving</li>
+                    <li>Strategy = Tactics + resource management</li>
+                    <li>Driving = just driving (only one thing = dull)</li>
+                </ul>
+                
+                <p>The benefit of adding a second mechanic is that if you understand it, and you understand how the two mechanics play off each other, the game will be more fun that either of those mechanics singly. However, if you don't understand one of the mechanics, the game will feel flat. </p>
+                <p>My attempt to make Cubefall engaging was to add a stacking mechanic. This literally and figuratively gave the game another dimension. Stacking added Risk vs Reward, and added a puzzle element to what was originally just arcade. Unfortunately, since I didn't explain stacking well, most players didn't 'play the game right' and thus didn't find it much fun.</p>
+                
             </article>
         </section>
         <section id="lessons-2">
-            <h2><a style="color: rgb(101, 118, 219)">#</a> Lessons 2: Tutorials</h2>
+            <h2><a style="color: rgb(101, 118, 219)">#</a> Lessons 2: Knowing when to quit</h2>
             <article>
                 <div class="pull-quote-container">
-                    <p class="pull-quote">You cannot teach a man anything, you can only help him find it within himself.</p>
-                    <p class="pull-quote-author">Galileo</p>
+                    <p class="pull-quote">You've got to know when to hold 'em, know when to fold 'em...</p>
+                    <p class="pull-quote-author">Kenny Rogers</p>
                 </div>
                 <p>Coming soon (also)!</p>
                 <p>Sorry, these things take time.</p>
@@ -200,3 +306,5 @@
 
     <script src="../Resources/JavaScript/ExpandableText.js"></script>
 </body>
+
+
