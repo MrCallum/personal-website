@@ -107,15 +107,23 @@ nav a:after {
     width: 0;
 }
 
+
+
 nav a:hover:after { 
     width: 100%; 
     left: 0; 
 }
 
+#current-page-anchor a:hover:after { 
+    /* This is so you can navigate from project page back to projects by clicking "projects" anchor. but we don't want any hover effect */
+    width: 0;
+}
 
 #header_container {
     padding: 10rem 0 16rem 0;
 }
+
+
 
 
 header h1 {
@@ -212,11 +220,11 @@ section {
     padding: 1rem ;
 }
 
-.icon:hover {
+/* .icon:hover {
     background-color: rgb(156, 156, 156);
     border-radius: 50%;
     transition: ease-in 0.25s;
-}
+} */
 
 
 article {
