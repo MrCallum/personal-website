@@ -259,7 +259,6 @@ article a {
 article a:hover {
     
     color: white;
-    letter-spacing: 0.05rem;
     transition: 0.12s;
 }
 
