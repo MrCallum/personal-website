@@ -156,6 +156,7 @@ main {
 }
 
 .pull-quote {
+    text-align: center;
     font-size: 1.5rem;
     font-style: italic;
     /* text-transform: uppercase; */
