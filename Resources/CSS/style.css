@@ -149,26 +149,24 @@ main {
 
 .pull-quote-container {
     margin: 2rem 0;
-    padding: 5rem 2rem 4.5rem 2rem;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    padding: 3rem 2rem;
+    /* border-top: 1px solid grey;
+    border-bottom: 1px solid grey; */
 
 }
 
 .pull-quote {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .pull-quote:before {
     content: open-quote;
-    margin: 0 1rem;
 }
 
 .pull-quote:after {
     content: close-quote;
-    margin: 0 1rem;
 }
 
 .pull-quote-author{

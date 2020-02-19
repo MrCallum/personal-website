@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+    <title>Projects | Cubefall</title>
+    
+    <link href="../Resources/CSS/style.css" type="text/css" rel="stylesheet"> 
+    <link href="../Resources/CSS/mobile-menu-style.css" type="text/css" rel="stylesheet"> 
+    <link href="../Resources/CSS/projects-style.css" type="text/css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../Resources/Images/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Resources/Images/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Resources/Images/Favicons/favicon-16x16.png">
+
+    <script src="../Resources/JavaScript/MobileMenu.js"></script>
+
+    
+        
+</head>
+<body>
+    <header >
+        <div id="header-cubefall" class="header-image">
+            <div id="mobile-menu">
+                <p onclick="closeMobileMenu()">close</p>
+                <ul>
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="../cv.html">CV</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li id="current-page-anchor-mobile"><a>&rdsh; Cubefall</a></li>
+                </ul>
+            </div>
+
+            <nav>
+                <ul>
+                    <li id="mobile-menu-button" onclick="openMobileMenu()">Menu</li>
+                    <li class="desktop-nav-button"><a href="../index.html">About</a></li>
+                    <li class="desktop-nav-button" ><a href="../cv.html">CV</a></li>
+                    <li class="desktop-nav-button" id="current-page-anchor" >Projects</li>
+                </ul>
+            </nav>
+    
+            <div id="header_container">
+                <h1>Cubefall</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="dbs-logo-holder">
+            <img id="dbs-logo"src="..\Resources\Images\Sophie solo no colar.png">
+        </div>
+        <section id="post-meta">
+            <p>By <a>Callum Morrison</a></p>
+            <p>11-Feb-2020</p>
+        </section>
+                
+        <section id="about">
+            <h2><a style="color: mediumseagreen">#</a> Informa Quiz App - About</h2>
+            <article>
+                <h3>Background</h3>
+                <p>In early 2018 I 
+                    <span class="expnd-text-button">
+                        left my career in accounting 
+                    </span> <span class="extra-text">
+                        This is what my degree was in, and had around 3 years industry experience by this point. I've decided that my brain doesn't like accounting. hence the career switch into tech
+                    </span> 
+                    to take a stab at being a mobile game developer. I made Cubefall. Cubefall didn't make enough to live on but I enjoyed my time immensely.</p> 
+                
+                <h3>Executive Summary</h3>
+                <ul>
+                    <li>Made with &rarr; Unity + C#</li>
+                    <li>Made for &rarr; Android & iOS</li>
+                    <li>Type of game &rarr; Single player, arcade / puzzle</li>
+                    <li>Proud of &rarr; Game generally, especially gameplay</li>
+                    <li>Profit &rarr; No.</li>
+                </ul>
+        </section>
+
+        <section id="gameplay">
+            <h2><a style="color: rgb(215, 238, 171)">#</a> Gameplay</h2>
+            <article>
+                <h3>Basic Gameplay: Popping</h3>
+                <p>Screenshot is taken from the app store listing. </p>
+                <img class="vertical-screencap-image" src="../Resources/Images/cubefall/1 Export.png"/>
+                <ul>
+                    <li>Cubes slowly fall from the top of the screen. Each cube is either red, blue, green or yellow.</li>
+                    <li>The player can tap to pop a cube, gaining points. To pop, you must have your UI colour-swatch selected on the same colour as the cube.</li>
+                    <li>If you don't pop a cube and it touches the 'floor' at the bottom, it 'dies'. Your screen will start to fill up.</li>
+                    <li>Get as many points as possible before A: time runs out or B: the screen fills up.</li>
+                </ul>
+
+                <h3>Advanced Gameplay: Stacking</h3>
+                
+                <p>Some more screenshots from the app store listing - see how sometimes cubes are lined up in the Z axis (this is 'stacking').</p>
+                <div class="vertical-image-container">
+                    <img class="vertical-screencap-image" src="../Resources/Images/cubefall/2 Export.png"/>
+                    <img class="vertical-screencap-image" src="../Resources/Images/cubefall/3 Export.png"/>
+                    <img class="vertical-screencap-image" src="../Resources/Images/cubefall/4 Export.png"/>
+                    <img class="vertical-screencap-image" src="../Resources/Images/cubefall/5 Export.png"/>
+                    <img class="vertical-screencap-image" src="../Resources/Images/cubefall/6 Export.png"/>
+                </div>
+                <p>NB: I cite communicating the stacking concept as my biggest misstep: don't worry if you don't get it! Here is the gist of how it's done. I won't bore you with how you actually do it:</p>
+                <ul>
+                    <li>'Stacking' means to place one cube behind another. This can be done up to 5 times in a single 'stack'</li>
+                    <li>A single cube is multiplied in value for how far back you get it. You can get up to x5 bonus.</li>
+                    <li>You can <u>only</u> pop the front cube. After popping the front, the cubes behind slide forward, filling the gap.</li>
+                    <li>If one cube in the stack dies, they all die.</li>
+                </ul>
+                
+                
+                
+                
+                <h3>Why bother with something that players couldn't understand?</h3>
+                <p>I've always found that the most engaging games have you do <em>at least</em> two things. Some general examples:</p>
+                <ul>
+                    <li>FPS = shooting + moving</li>
+                    <li>Strategy = Tactics + resource management</li>
+                    <li>Driving = just driving (only one thing = dull)</li>
+                </ul>
+                
+                <p>The benefit of adding a second mechanic is that if you understand it, and you understand how the two mechanics play off each other, the game will be more fun that either of those mechanics singly. However, if you don't understand one of the mechanics, the game will feel flat. </p>
+                <p>My attempt to make Cubefall engaging was to add a stacking mechanic. This literally and figuratively gave the game another dimension. Stacking added Risk vs Reward, and added a puzzle element to what was originally just arcade. Unfortunately, since I didn't explain stacking well, most players didn't 'play the game right' and thus didn't find it much fun.</p>
+            </article>
+        </section>
+
+        <section id="technologies">
+            <h2><a style="color: lightblue">#</a> Technologies</h2>
+            <article>
+                <div class="project-logo" style="margin-top: 2rem;">
+                    <img src="https://i.redd.it/estpv0c6iw841.jpg"/>
+                    <img src="https://w0.pngwave.com/png/328/221/c-programming-language-logo-microsoft-visual-studio-net-framework-javascript-icon-png-clip-art.png"/>
+                    <img src="https://image.flaticon.com/icons/png/512/174/174836.png"/>
+                    <img src="https://cnet3.cbsistatic.com/img/qt1Ts53nLxKXj_u8hLTeQgkhoIo=/370x0/2011/10/05/74df5391-fdc1-11e2-8c7c-d4ae52e62bcc/apple-logo-2.jpg"/>
+                </div>
+                <p>The app was written in C#, built using <a href="https://unity.com/" target="blank">Unity</a> and was deployed on both the android and iOS app stores. Learning coding through game development is 
+                    <span class="expnd-text-button">
+                    how I fell in to Cubefall
+                    </span> <span class="extra-text">
+                        I had completed various small courses as I worked in accounting, including <a href="https://www.udemy.com/course/unitycourse/" target="blank">Ben Tristem's Unity course</a>. I had put in possibly 100+ hours of work into Ben's course and decided to start my own project for practice purposes. This grew in scope until I had simply no choice but to leave my job and try make it on my own. What else was I to do? Accounting? I still haven't finished Ben's course.
+                    </span> 
+                .</p>
+                <p><u>Unity</u>: During development of Cubefall, I simply 
+                    <span class="expnd-text-button">
+                        loved using Unity
+                    </span> <span class="extra-text">
+                        Part of this was likely just a love of coding generally, but I did go as far as being excited for upcoming Unity conferences, watching presentations in full (2+ hours) to see what new features were being added. I've always wanted to get back and tinker with it, but just not had the time.
+                    </span>
+                . Cubefall was not a demanding game and Unity handled it with ease. I used most of the major areas: scripting (coroutines, classes, events), physics, lighting, UI, save management, animation, touch-input handling, cameras, SFX, music etc. </p>
+                <p><u>Unity Services</u>: I used a number of Unity's in-built services, such as Unity Ads, Unity Analytics, Unity Collaborate and Unity IAPS. One fond memory was of using Analytics in the tutorial to see just how few people understood stacking. Sarcasm aside, it was satisfying to see IAPs and Ads in action - it gave the app a feeling of realness and a proud milestone of my developer skills.</p>
+                <p><u>Working on mobile</u>: I found working with aspect ratios of different mobile devices was a major time sink. When your camera is pointing at the gamespace, squatter devices are disadvantaged by having less vertical screen-space to watch for cubes coming down, and taller devices have  
+                    <span class="expnd-text-button">
+                        extra space
+                    </span> <span class="extra-text">
+                        The solution was some home-brewed maths. I took the most squat and most tall device resolutions on the market, plus a variety of other devices. For each device, I calculated how much zooming in/out and camera tilting adjustments needed to be done to make the gamespace fair and well presented. I then plotted these adjustment values against the device's aspect ratio and obtained a line of best fit. This LOBF could then be used to make a general adjustment on any aspect ratio.
+                    </span>
+                . With more non-game development experience under my belt, I know realise that optimising for a variety of devices is simply part and parcel for any front-end developer.</p>
+            </article>
+            
+        </section>
+        
+        <section id="lessons-1">
+            <h2><a style="color: rgb(10, 145, 190)">#</a> Lessons 1: Knowing when to quit</h2>
+            <article>
+                
+                <div class="pull-quote-container">
+                    <p class="pull-quote">You've got to know when to hold 'em, know when to fold 'em...</p>
+                    <p class="pull-quote-author">Kenny Rogers</p>
+                </div>
+                <p>Coming soon!</p>
+                <p>In the mean time, here's some reading for all you latin visitors: Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cumque rerum facilis hic eveniet error magnam adipisci nam amet eaque mollitia perspiciatis, magni architecto, est sed ab officia placeat possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cumque rerum facilis hic eveniet error magnam adipisci nam amet eaque mollitia perspiciatis, magni architecto, est sed ab officia placeat possimus?</p>
+            </article>
+        </section>
+        <section id="lessons-2">
+            <h2><a style="color: rgb(101, 118, 219)">#</a> Lessons 2: Tutorials</h2>
+            <article>
+                <div class="pull-quote-container">
+                    <p class="pull-quote">You cannot teach a man anything, you can only help him find it within himself.</p>
+                    <p class="pull-quote-author">Galileo</p>
+                </div>
+                <p>Coming soon (also)!</p>
+                <p>Sorry, these things take time.</p>
+            </article>
+        </section>
+
+        <section id="next">
+            <h2><a style="color: mediumseagreen">#</a> Next</h2>
+            <article>
+                <p>Return to projects page <a href="../projects.html">here</a>.</p>
+            </article>
+        </section>
+
+        
+        
+    </main>
+    <footer>
+        <ul>
+            <li>Callum Morrison</li>
+            <li>&copy; 2020, all rights reserved</li>
+        </ul>
+    </footer>
+
+    <script src="../Resources/JavaScript/ExpandableText.js"></script>
+</body>
