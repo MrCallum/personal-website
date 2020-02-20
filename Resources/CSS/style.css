@@ -282,6 +282,39 @@ footer {
 
 }
 
+@media only screen and  (orientation: portrait) {
+
+    p {
+        line-height: 4.5rem;
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+    }
+
+    li {
+        font-size: 2rem;
+        line-height: 4.5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    } 
+
+    .pull-quote, .pull-quote-author {
+        font-size: 2rem;
+    }
+
+}
+
+
+
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
     
 
