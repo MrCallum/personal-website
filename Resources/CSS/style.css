@@ -65,6 +65,23 @@ a {
     color: rgba(1, 82, 99, 0.644);    
 }
 
+.expnd-text-button:after {
+   
+    content: "\2194";
+    position: absolute;
+    left: 10px;
+    opacity: 0;
+    background: none;
+}
+
+.expnd-text-button:hover:after {
+    left: auto;
+    opacity: 1;
+    position: relative;
+    transition: 0.5s;
+    background: none;
+}
+
 
 
 nav ul, footer ul {
@@ -311,6 +328,14 @@ footer {
         font-size: 2rem;
     }
 
+
+    .expnd-text-button:after {
+   
+        content: "";
+        
+    }
+    
+    
 }
 
 
