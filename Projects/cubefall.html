@@ -106,14 +106,22 @@
                     <img class="vertical-screencap-image" src="../Resources/Images/cubefall/5 Export.png"/>
                     <img class="vertical-screencap-image" src="../Resources/Images/cubefall/6 Export.png"/>
                 </div>
-                <p>'Stacking' adds the puzzle element to Cubefall. NB: I cite communicating the stacking concept as my biggest misstep: don't worry if you don't get it! Here is the gist of how it's done; I won't bore you with how you actually do it:</p>
-                <ul>
-                    <li>'Stacking' means to place one cube behind another. This can be done up to 5 times in a single 'stack'</li>
-                    <li>A single cube is multiplied in value for how far back you get it. You can get up to x5 bonus.</li>
-                    <li>You can <u>only</u> pop the front cube. After popping the front, the cubes behind slide forward, filling the gap.</li>
-                    <li>If one cube in the stack dies, they all die.</li>
-                </ul>
-                <p>Now that you know the idea, here is a quick video (it also shows how when cubes die, they become physics based which I like very much):</p>
+                <p>'Stacking' is risky, but worth exponential points: this adds the puzzle element to Cubefall as players have to maximise their score given a finite number of cubes.</p> 
+                <p>Longer 
+                    <span class="expnd-text-button">
+                        explanation here
+                    </span> <span class="extra-text">
+                        <br/>
+                        &#8226; 'Stacking' means to place one cube behind another. This can be done up to 5 times in a single 'stack'.
+                        <br/>
+                        &#8226; A single cube is multiplied in value for how far back you get it. You can get up to x5 bonus.
+                        <br/>
+                        &#8226; You can <u>only</u> pop the front cube. After popping the front, the cubes behind slide forward, filling the gap.
+                        <br/>
+                        &#8226;If one cube in the stack dies, they all die.
+                        <br/>
+                    </span>
+                    , but i'd recommend watching this video instead (it also shows how cubes become physics-based when they die, which I find very satisfying):</p>
                 <video class="vertical-screencap-video" controls muted>
                     <source src="../Resources/Videos/cubefall-video.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
@@ -124,17 +132,24 @@
 
 
 
-                <p>Why bother with something that players couldn't understand? Why not cut it? See <a href="#lessons-1">Lesson 1</a> for my answer.</p>
+                <p>NB: I cite communicating the stacking concept as my biggest misstep. Why bother with something that players couldn't understand? Why not cut it? See <a href="#lessons-1">Lesson 1</a> for my answer.</p>
             
                 <h3>Modes</h3>
-                <p>The general flow of the game was this: </p>
-                <ul>
-                    <li>Each mode has a set number of waves.</li>
-                    <li>Each wave has set properties: no. of cubes, types of cubes, spawn rate, spawn density and fall speed. </li>
-                    <li>Survive all the waves until the final wave.</li>
-                    <li>The final wave is a constant barrage until the screen fills up. This typically takes 20 seconds.</li>
-                </ul>
-                <p>I based the game around these stochastic waves. If a player simply pops every cube without stacking, they will get a minimal score. However, good players will use stacking to improve their scores, and very good players will use particular cube quirks and other high-risk tactics to get even higher scores. As such, the game becomes a puzzle under pressure. Even to this day I find the 
+                <p>The general flow of the game was based around a set number of 
+                    <span class="expnd-text-button">
+                        stochastic waves
+                    </span> <span class="extra-text">
+                        <br/>
+                        &#8226; Each mode has a set number of waves.
+                        <br/>
+                        &#8226; Each wave has set properties: no. of cubes, types of cubes, spawn rate, spawn density and fall speed.
+                        <br/>
+                        &#8226; Survive all the waves until the final wave.
+                        <br/>
+                        &#8226;The final wave is a constant barrage until the screen fills up. This typically takes 20 seconds.
+                        <br/>
+                        
+                    </span>. If a player simply pops every cube without stacking, they will get a minimal score. However, good players will use stacking to improve their scores, and very good players will use particular cube quirks and other high-risk tactics to get even higher scores. As such, the game becomes a puzzle under pressure. Even to this day I find the 
                     <span class="expnd-text-button">
                         gameplay engrossing.
                     </span> <span class="extra-text">
@@ -167,17 +182,28 @@
                     
                     . It's functional, and simple to understand, but not exactly up to the same standard as other apps. </p>
                 
-                <p>If I was to design the menu now, I would likely opt for a much cleaner, more focused menu. I would try make the player think less and get to games faster. Some ideas:</p>
-                <ul>
-                    <li>One page, scrollable</li>
-                    <li>Main game at the top, swipe left and right to navigate modes. Replace 3D icons with png icons + animations.</li>
-                    <li>Next section for daily mode</li>
-                    <li>Next section for your current combined score + place on leaderboard. Option to expand for more info.</li>
-                    <li>Possibly a social section next</li>
-                    <li>Instead of notifications to say a new mode has been unlocked, show an animation and scroll to this new mode automatically.</li>
-                    <li>Put in small settings icon with slide-out menu.</li>
-                </ul>
-                <p>With this simple design plan we go from 3 pages down to 1 and likely increase retention by making the player think less.</p>
+                <p>If I was to design the menu now, I would likely opt for a much cleaner, more focused menu. I would try make the player think less and get to games faster. I'd likely do this through 
+                    <span class="expnd-text-button">
+                        a single, scrollable page.
+                    </span> <span class="extra-text">
+                        <br/>
+                        &#8226; Main game at the top, swipe left and right to navigate modes. Replace 3D icons with png icons + animations.
+                        <br/>
+                        &#8226; Next section for daily mode
+                        <br/>
+                        &#8226; Next section for your current combined score + place on leaderboard. Option to expand for more info.
+                        <br/>
+                        &#8226; Possibly a social section next
+                        <br/>
+                        &#8226; Instead of notifications to say a new mode has been unlocked, show an animation and scroll to this new mode automatically.
+                        <br/>
+                        &#8226; Put in small settings icon with slide-out menu.
+                        <br/>
+                        <br/>
+                        With this simple design plan we go from 3 pages down to 1 and likely increase retention by making the player think less.
+                    </span>
+                </p>
+                
 
                 <h3>Music</h3>
                 <p>I was incredibly happy with the music which was especially made for Cubefall by the very talented <a href="https://soundcloud.com/seanpett" target="blank">Sean Pett</a>. Here are the two songs used:</p>
