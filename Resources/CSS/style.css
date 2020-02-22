@@ -299,7 +299,7 @@ footer {
 
 }
 
-@media only screen and  (orientation: portrait) {
+@media only screen and  (orientation: portrait) and (min-width : 480px) {
 
     p {
         line-height: 4.5rem;
@@ -334,8 +334,6 @@ footer {
         content: "";
         
     }
-    
-    
 }
 
 
