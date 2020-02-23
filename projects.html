@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./Resources/Images/Favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./Resources/Images/Favicons/favicon-16x16.png">
 
-    <script src="Resources/JavaScript/MobileMenu.js"></script>
+    
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158810085-1"></script>
     <script>
@@ -28,7 +28,7 @@
     <header >
         <div id="header-projects" class="header-image">
             <div id="mobile-menu">
-                <p onclick="closeMobileMenu()">close</p>
+                <br>
                 <ul>
                     <li><a href="https://www.callum-morrison.com/">About</a></li>
                     <li><a href="cv">CV</a></li>
@@ -37,8 +37,21 @@
             </div>
 
             <nav>
+                <div class="icon-bar-mobile" >
+                    <button 
+                        id="hamburger-button"
+                        
+                        class="hamburger hamburger--slider" 
+                        type="button" 
+                        onclick="toggleMobileMenu()">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+
+
                 <ul>
-                    <li id="mobile-menu-button" onclick="openMobileMenu()">Menu</li>
                     <li class="desktop-nav-button"><a href="https://www.callum-morrison.com/">About</a></li>
                     <li class="desktop-nav-button" ><a href="cv">CV</a></li>
                     <li class="desktop-nav-button" id="current-page-anchor" >Projects</li>
@@ -115,4 +128,6 @@
             <li>&copy; 2020, all rights reserved</li>
         </ul>
     </footer>
+
+    <script src="Resources/JavaScript/MobileMenu.js"></script>
 </body>

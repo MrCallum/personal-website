@@ -2,15 +2,13 @@ const mobMenu = document.getElementById("mobile-menu");
 const hamburgerButton = document.getElementById("hamburger-button");
 
 
-function openMobileMenu(){
-    document.getElementById("mobile-menu").style.width = "100%";
-}
-
-function closeMobileMenu(){
-    document.getElementById("mobile-menu").style.width = "0%";
-}
-
 function toggleMobileMenu(){
+    
+    if(!mobMenu){
+        console.log("No mobile menu!")
+        return;
+    } 
+
     const computedStyle = window.getComputedStyle(mobMenu, null);
 
     if(computedStyle.width !== "0px"){

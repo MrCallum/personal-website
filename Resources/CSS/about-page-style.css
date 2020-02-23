@@ -64,17 +64,7 @@ article {
 }
 
 
-.icon-bar-mobile {
-    visibility: hidden;
-    width: auto;
-    padding: 3rem 4rem 0 0;
-    opacity: 1;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    
-    right: 0;
-}
+
 
 .icon-bar-desktop {
     width: 20%;
@@ -218,9 +208,7 @@ article {
         background-image: url("../Images/PageImages/mobile/group-beach-running.JPG");
     }
 
-    .icon-bar-mobile {
-        visibility: visible;
-    }
+    
 
     .icon-bar-desktop {
         visibility: hidden;
