@@ -19,6 +19,12 @@
     color: white;
 }
 
+#skills h3 {
+    border: 2px solid black;
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 1rem;
+}
 
 
 #informa-product-owner .job-card-display-section {
@@ -142,5 +148,14 @@
         background-color: inherit;
         font-size: 3rem;
         transition: 0.4s;
+    }
+
+
+    #skills h3 {
+        box-sizing: border-box;
+        border: 6px solid black;
+        margin: 4rem 1rem 2rem 1rem;
+        width: 95%;
+        text-align: center;
     }
 }
