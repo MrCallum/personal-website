@@ -126,8 +126,7 @@ article {
 }
 
 #past {
-    background-image: url("../Images/PageImages/cliff-tom.JPG");
-    background-position: right;
+    background-image: url("../Images/PageImages/lakeside.jpg");
 }
 
 #interests {
@@ -191,7 +190,8 @@ article {
     }
     
     #past {
-        background-image: url("../Images/PageImages/mobile/cliff-tom.JPG");
+        background-image: url("../Images/PageImages/lakeside.jpg");
+        
     }
     
     
@@ -202,6 +202,7 @@ article {
     
     #next {
         background-image: url("../Images/PageImages/mobile/callum-and-rory.JPG");
+        background-position: left;
     }
     
     #future {
